@@ -1,0 +1,15 @@
+Contributions:
+  Presentations:
+  - Presentation Title: 'Title'  #  (Name of the presentation)
+    Conference / Event Name: #  (The name of the event in which the person gave the presentation)
+    Location: # e.g., Afghanistan, Albania, Antarctica... Full list: https://ccv-cvc.ca/schema/dataset-cv-lov.xml (The country where the conference took place)
+    City: null#  (The city where the conference/event took place)
+    Main Audience: Researcher # One of: Researcher, Knowledge User, Decision Maker, General Public (The nature of the audience)
+    Invited?: Yes # One of: Yes, No (Indicate whether the person was invited to present this information)
+    Keynote?: No # One of: Yes, No (Indicate whether the person gave the keynote address at this event)
+    Competitive?: null # One of: Yes, No (Indicate if participation in this event involved a competitive process.)
+    Presentation Year: '' # In format yyyy (The year the presentation was given  )
+    Description / Contribution Value: null #  (Provide a concise description of this contribution and its value to the area of research for which you are applying for funding)
+    URL: null #  (The web address, if relevant )
+    Co-Presenters: null #  (The names of other persons co-presenting this topic, if relevant)
+

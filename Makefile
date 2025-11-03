@@ -19,6 +19,7 @@ Sources += $(wildcard *.md)
 
 Ignore += $(wildcard *.xml *.XML)
 
+Ignore += *.xmldiff *.diff
 ## pubchange.xmldiff: start.XML pubchange.XML 
 %.xmldiff: start.XML %.XML 
 	xmldiff $^ > $@
