@@ -38,13 +38,29 @@ Sources += present.pgr
 %.up.xml: %.yaml
 	pyenv/bin/ccv_generator -i $< $@
 
+Sources += $(wildcard *.tmp)
+Sources += $(wildcard *.pgr)
+## Ignore += *.pgr
 ## current.present.pgr: current.present.yaml present.tmp ypgr.py
 %.present.pgr: %.present.yaml present.tmp ypgr.py
 	$(PITH)
 
 ## current.present.new.yaml: current.present.pgr present.tmp pgry.py
+## new.present.new.yaml: new.present.pgr present.tmp pgry.py
 %.present.new.yaml: %.present.pgr present.tmp pgry.py
 	$(PITH)
+
+## new.present.new.up.xml: new.present.pgr
+## current.present.new.up.xml: 
+## current.present.up.xml: 
+current.present.old.up.xml: current.present.old.yaml
+
+## diff current.present.new.yaml: current.present.old.yaml > tmp.diff ##
+
+######################################################################
+
+## 2025 Nov 02 (Sun) How to behave? Import the tsvpgr stuff from cron??
+## For now, just save different .pgrs!
 
 ######################################################################
 
