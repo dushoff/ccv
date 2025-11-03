@@ -32,11 +32,11 @@ Ignore += *.xmldiff *.diff
 Sources += present.pgr
 
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml Makefile
+%.present.yaml: %.xml Makefile | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## current.present.up.xml: current.present.yaml
-%.up.xml: %.yaml
+%.up.xml: %.yaml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< $@
 
 Sources += $(wildcard *.tmp)
