@@ -26,16 +26,40 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
+## In way too much haste
+
+mirrors += earn
+
+earn.collab.yaml: earn/ccv.xml
+	pyenv/bin/ccv_generator -i $< -f "Activities/International Collaboration Activities" $@
+
+## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
+%.collab.pgr: %.collab.yaml collab.tmp ypgr.py
+	$(PITH)
+
+## current.present.yaml: current.xml
+%.present.yaml: %.xml | ccv_generator.pip
+	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+
+.PRECIOUS: %.collab.new.yaml
+%.collab.new.yaml: %.collab.pgr collab.tmp pgry.py
+	$(PITH)
+
+## jd.collab.new.up.xml: jd.collab.pgr jd.collab.new.yaml
+
+######################################################################
+
 ## Build a presentations section?
 
 ## Probably want to archive using tsv soon (see cron)
 Sources += present.pgr
 
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml Makefile | ccv_generator.pip
+%.present.yaml: %.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## current.present.up.xml: current.present.yaml
+%.up.xml: %.yaml | ccv_generator.pip
 %.up.xml: %.yaml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< $@
 
@@ -97,6 +121,7 @@ makestuff:
 -include makestuff/os.mk
 
 -include makestuff/pyenv.mk
+-include makestuff/mirror.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
