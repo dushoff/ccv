@@ -1,4 +1,4 @@
-We are going to build a system to manage ccv subsections. For each subsection, we will have a default format. For example, the presentations format looks like this: 
+We are going to build a system to manage subsections from the Canadian common CV. For each subsection, we will have a default format. For example, the presentations format looks like this: 
 
   - Presentation Title: 'Title'  #  (Name of the presentation)
     Conference / Event Name: #  (The name of the event in which the person gave the presentation)
@@ -14,123 +14,67 @@ We are going to build a system to manage ccv subsections. For each subsection, w
     Co-Presenters: null #  (The names of other persons co-presenting this topic, if relevant)
 
 Our first step will be to write a python script that takes a template file (filename stored in the variable template) and an input file (variable infile) and makes a .pgr file which:
-* ignores comments (\s*#.*)
-* ignores fields that match the template
+* Treats the opening - in the record format as a record separator
+* ignores comments started with # (and preceding whitespace)
+* ignores fields that match the template default values
 * drops the leading tab
+* ignores lines which are indented with only 0 or 2 spaces and not 
 
-----------------------------------------------------------------------
+The script should start like this:
+```
+import re
+from sys import argv
+script, infile, template = argv
+```
 
-It's ok, just give me the script. I don't want it to run anyway, I want to embed it in a script which is setting the values of infile and template
+and be tab-indented. Remember to drop backticks at the beginning and end of scripts
 
-----------------------------------------------------------------------
+It should be inline for now (no functions) and should write to stdout
 
-Please just write to stdout
-
-----------------------------------------------------------------------
-
-
-Map Title to Presentation Title, Venue to Conference
-
-
-I would like a python script to convert records of type pgr:
-
+The output should be newline-separated paragraphs that look like this:
+```
 Title: Transmission intervals in disease modeling
 Venue: Math Ecology and Math Epidemiology Workshop
 Date: May 2023
 Address: Hong Kong Polytechnic U.
-
-to records of type ccv.xml
-
-
-----------------------------------------------------------------------
-
-----------------------------------------------------------------------
-
-Oops!!
-
-----------------------------------------------------------------------
-
-
-Lots of extra blank lines here. The first record looks like this:
-
-```
-- Presentation Title: 'Bridging between statistics and science: Some philosophical claptrap'  #  (Name of the presentation)
-
-Conference / Event Name: Banff International Research Station workshop on Mathematical and Statistical Challenges in Bridging Model Development, Parameter Identification and Model Selection in the Biological Sciences #  (The name of the event in which the person gave the presentation)
-
-Location: Canada # e.g., Afghanistan, Albania, Antarctica... Full list: https://ccv-cvc.ca/schema/dataset-cv-lov.xml (The country where the conference took place)
-
-City: Banff #  (The city where the conference/event took place)
-
-Presentation Year: '2018' # In format yyyy (The year the presentation was given  )
 ```
 
-It should look like this (no initial dash, no extra words, underscores, no extra line breaks; trim comments); also, something new: I'd like to lose the bracketing single quotes:
-
-```
-Presentation_Title: Bridging between statistics and science: Some philosophical claptrap
-Conference: Banff International Research Station workshop on Mathematical and Statistical Challenges in Bridging Model Development, Parameter Identification and Model Selection in the Biological Sciences
-Location: Canada
-City: Banff
-Presentation_Year: 2018
-```
-
+You should construct pgr field names which uniquely identify field names from the template by: removing punctuation; dropping words not needed for disambiguation; replacing remaining necessary spaces with underscores. Drop bracketing single quotes from the values.
 
 ----------------------------------------------------------------------
 
-import re
-from sys import argv
-script, infile, template = argv
-
+Also, your script seems way too complicated. We don't need dropwords, just use words at the beginning as many as necessary. We don't need field keys that aren't in the template, and we don't need record keys at all...
 
 ----------------------------------------------------------------------
 
-You're not properly ignoring the early less-indented lines. You are parsing the first line in the paragraph as starting with "-". That dash should be thrown away after recognition.	
+Thanks. Can we also have a header paragraph that:
+* Uses only fields that appear in the record paragraphs
+* Shows the mapping between the pgr field name and the yaml field name
+* follows the same style as the record paragraphs
 
 ----------------------------------------------------------------------
 
-The record paragraphs look pretty good, but you're no longer dropping the fields that are always default. You can drop those from the header paragraph too.
-
-Let's remove dashes and question marks from our identifiers
-
-The record paragraph still has issues. It looks like this
-```
-Field Mapping:
-Presentation_Year:_'': Presentation Year: ''
-Co-Presenters:: Co-Presenters: null
-Keynote?:: Keynote?: No
-URL:: URL: null
-Conference: Conference / Event Name:
--: - Presentation Title: 'Title'
-Contributions:: Contributions:
-Description: Description / Contribution Value: null
-Competitive?:: Competitive?: null
-Presentations:: Presentations:
-City:: City:
-Main: Main Audience: Researcher
-Location:: Location:
-Invited?:: Invited?: Yes
-```
-
-There's something wrong with the Presentation Title line; you didn't pre-parse the initial "- "
-
-There's a lot of extra stuff in the header paragraph. We don't need the first line, and we dont need the second colon on any line, nore the default values. Also, I didn't say it but if we don't drop any information, or only drop punctuation, let's skip the field altogether. So we don't need a Location field, and the Main field should read simply "Main: Main Audience".
+Great. Now I want a script that will go reverse this. This is assuming that the original records match the template file. It will need to
+* reconstruct original field ids (using the template file)
+* replace defaults for fields not shown in each record
+* replace the dashes that indicate new records (and lose the paragraph breaks)
 
 ----------------------------------------------------------------------
 
-Remember to drop backticks at the beginning and end of scripts
+These are great. A couple of small changes. The lines with <=2 spaces and no initial dash at the beginning of the template files are section indicators.
 
-Presentation Title is still parsed wrong in the header paragraph; also both that and Presentation_Year should not be there at all, since they do not “drop information”.
-
-----------------------------------------------------------------------
-
-Header paragraph is worse now. First field is still parsed wrong, and still not properly eliminated. Necessary fields are gone. 
+The reconstruction script should echo these verbatim, and ignore them for the purposes of reconstructing the records.
 
 ----------------------------------------------------------------------
 
-I think the code is all correct now except that you are still not stripping the initial (paragraph-separating) dash early enough.
+This script somehow does not print anything!
+
+(Lots of directly typed NOISE)
 
 ----------------------------------------------------------------------
 
-The identifiers that drop only punctuation are (improperly) back in the header, as is (mysteriously) one of the two should-be-identical Presentation_Year and Presentation_Title. The record paragraphs are back to using the yaml identifiers instead of the desired pgr identifiers.
+Header lines are incorrect (improperly indented, should be verbatim). They are also apparently not being ignored after echoing; their content is showing up in the records!
+
+
+Almost perfect. The bracketing single quotes are not being reconstructed. And default values are being taken from the template only sometimes; they should be taken for any field that is missing from any record.
 

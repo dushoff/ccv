@@ -42,6 +42,10 @@ Sources += present.pgr
 %.present.pgr: %.present.yaml present.tmp ypgr.py
 	$(PITH)
 
+## current.present.new.yaml: current.present.pgr present.tmp pgry.py
+%.present.new.yaml: %.present.pgr present.tmp pgry.py
+	$(PITH)
+
 ######################################################################
 
 pypath = pyenv
