@@ -27,6 +27,7 @@ Ignore += *.xmldiff *.diff
 ######################################################################
 
 ## In way too much haste
+## Pay attention to what you are tracking, and where
 
 mirrors += earn
 
