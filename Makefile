@@ -30,7 +30,7 @@ Ignore += *.xmldiff *.diff
 
 mirrors += earn
 
-earn.collab.yaml: earn/ccv.xml
+earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f "Activities/International Collaboration Activities" $@
 
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
