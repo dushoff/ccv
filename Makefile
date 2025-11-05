@@ -46,7 +46,7 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 %.collab.new.yaml: %.collab.pgr collab.tmp pgry.py
 	$(PITH)
 
-## jd.collab.new.up.xml: jd.collab.pgr jd.collab.new.yaml
+## jd.colla2.new.up.xml: jd.collab.pgr jd.collab.new.yaml
 
 ######################################################################
 
