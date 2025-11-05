@@ -50,23 +50,24 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 
 ######################################################################
 
+## pgrClean is a temporary-use script for combining information from different sources to make a clean pgr for going forward
+## The pgr files here are dummies or may not exist – may be good to use for short-term cleaning
+new.pgr: dump.pgr pgrClean.py
+	$(PITH)
+
+######################################################################
+
 ## Build a presentations section?
 Sources += present.md
 
 ## Probably want to archive using tsv soon (see cron)
 Sources += present.pgr
 
-presentations.pgr: present.pgr pgrClean.py
-	$(PITH)
-
-
-
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
-## current.present.up.xml: current.present.yaml
-%.up.xml: %.yaml | ccv_generator.pip
+## jd.present.new.up.xml: jd.present.pgr
 %.up.xml: %.yaml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< $@
 

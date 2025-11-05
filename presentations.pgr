@@ -6,25 +6,14 @@ Author:
 City: 
 
 Presentation: Transmission intervals in disease modeling
-Conference_F1: Math Ecology and Math Epidemiology Workshop
-Conference_F2: IBENS Mini-symposium on Modeling Epidemics and Behaviour
-Conference_F3: Mathematical Biology Seminar
-Date_F1: May 2023
-Date_F2: May 2022
-Date_F3: March 2024
-City_F1: Hong Kong Polytechnic U.
-City_F2: Ecóle Normale Superieure, Paris
-City_F3: U. Maryland
-Presentation_Year_F1: 2023
-Presentation_Year_F2: 2022
-Presentation_Year_F3: 2024
-Location_F1: Hong Kong
-Location_F2: France
-Location_F3: United States of America
+Conference: Math Ecology and Math Epidemiology Workshop
+Date: May 2023
+City: Hong Kong Polytechnic U.
+Presentation_Year: 2023
+Location: Hong Kong
 
 Presentation: Mathematical modeling of infectious disease
-Conference_F1: National Taiwan Normal University Controlling COVID Lecture Series
-Conference_F2: National Taiwan Normal University­– Controlling COVID Lecture Series
+Conference: National Taiwan Normal University­– Controlling COVID Lecture Series
 Date: Apr 2023
 City: National Taiwan University, Taipei
 Presentation_Year: 2023
@@ -36,6 +25,13 @@ Date: Mar 2023
 City: National Taiwan University, Taipei
 Presentation_Year: 2023
 Location: Taiwan
+
+Presentation: Transmission intervals in disease modeling
+Conference: IBENS Mini-symposium on Modeling Epidemics and Behaviour
+Date: May 2022
+City: Ecóle Normale Superieure, Paris
+Presentation_Year: 2022
+Location: France
 
 Presentation: Predictions and effects
 Conference: McMaster Statistics Seminar
@@ -59,12 +55,17 @@ Location: United States of America
 Presentation_Year: 2021
 
 Presentation: Transmission intervals and COVID Control
-Conference_F1: PHAC Technical Tuesday Presentation
-Conference_F2: U Texas Covid modeling consortium
+Conference: PHAC Technical Tuesday Presentation
 Date: May 2021
 Presentation_Year: 2021
-Location_F1: Canada
-Location_F2: United States of America
+Location: Canada
+City: Online
+
+Presentation: Transmission intervals and COVID Control
+Conference: U Texas Covid modeling consortium
+Date: May 2021
+Presentation_Year: 2021
+Location: United States of America
 City: Online
 
 Presentation: Defining, estimating and applying transmission-interval distributions
@@ -81,8 +82,7 @@ City: Online
 Role: Panelist
 
 Presentation: Time distributions and coronavirus control
-Conference_F1: UNAM Seminar Series: COVID-19
-Conference_F2: UNAM Seminar Series – COVID-19
+Conference: UNAM Seminar Series – COVID-19
 City: Online
 Date: Dec 2020
 Location: Mexico
@@ -140,8 +140,7 @@ Presentation_Year: 2019
 Location: United Kingdom
 
 Presentation: Modeling and estimating generation intervals
-Conference_F1: Institute of Statistical Mathematics, Tachikawa, Tokyo
-Conference_F2: Institute of Statistical Mathematics, Tokyo
+Conference: Institute of Statistical Mathematics, Tokyo
 Date: Aug 2019
 Presentation_Year: 2019
 Location: Japan
@@ -153,8 +152,7 @@ Role: Author_only
 Author: M Roswell, R Winfree, J Dushoff
 
 Presentation: Thoughts about modeling time since infection
-Conference_F1: Society of Mathematical Biology Minisymposium Discussion, Montreal
-Conference_F2: Society of Mathematical Biology Minisymposium Discussion
+Conference: Society of Mathematical Biology Minisymposium Discussion
 Date: Jul 2019
 City: U. Montreal
 Location: Canada
@@ -181,8 +179,7 @@ City: Chicago
 Presentation_Year: 2018
 
 Presentation: Mathematics and Rabies Control
-Conference_F1: African Institute for Mathematical Sciences Public Lecture Cape Town, South Africa
-Conference_F2: African Institute for Mathematical Sciences Public Lecture
+Conference: African Institute for Mathematical Sciences Public Lecture
 Date: June 2018
 Location: South Africa, Republic of
 Main: General Public
@@ -198,6 +195,13 @@ Presentation: Interpreting data for acute respiratory infections: What can we in
 City: Brin Mathematics Research Center, U. Maryland
 Conference: Disease Dynamics and Human Behavior Workshop
 Date: November 2024
+Presentation_Year: 2024
+Location: United States of America
+
+Presentation: Transmission intervals in disease modeling
+Conference: Mathematical Biology Seminar
+City: U. Maryland
+Date: March 2024
 Presentation_Year: 2024
 Location: United States of America
 
@@ -287,21 +291,27 @@ City: Tempe
 Presentation_Year: 2014
 
 Presentation: Modeling the Evolution of Within-host Reproductive Rates in Pathogens
-Conference_F1: Simons Institute: New Directions in Probabilistic Models of Evolution
-Conference_F2: Academica Sinica Institute of Physics seminar
-Location_F1: United States of America
-Location_F2: Taiwan
-City_F1: Berkeley
-City_F2: Taipei
+Conference: Simons Institute: New Directions in Probabilistic Models of Evolution
+Location: United States of America
+City: Berkeley
+Presentation_Year: 2014
+
+Presentation: Modeling the Evolution of Within-host Reproductive Rates in Pathogens
+Conference: Academica Sinica Institute of Physics seminar
+Location: Taiwan
+City: Taipei
 Presentation_Year: 2014
 
 Presentation: Long-term relationships and routes of HIV transmission
-Conference_F1: U. Michigan Center for the Study of Complex Systems symposium
-Conference_F2: McMaster University IIDR symposium
-Location_F1: United States of America
-Location_F2: Canada
-City_F1: Ann Arbor
-City_F2: Hamilton
+Conference: U. Michigan Center for the Study of Complex Systems symposium
+Location: United States of America
+City: Ann Arbor
+Presentation_Year: 2013
+
+Presentation: Long-term relationships and routes of HIV transmission
+Conference: McMaster University IIDR symposium
+Location: Canada
+City: Hamilton
 Presentation_Year: 2013
 
 Presentation: Non-negative matrix factorization for metagenomic data analysis
