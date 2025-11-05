@@ -1,104 +1,150 @@
+Presentation: 
+Conference: 
+Date: 
+Role: 
+Author: 
+City: 
 
-Presentation:
-Conference:
-Date:
-Role:
-Author:
-City:
-
-Presentation: Transmission intervals in disease modeling HK
-Conference: Math Ecology and Math Epidemiology Workshop
-Date: May 2023
-City: Hong Kong Polytechnic U.
+Presentation: Transmission intervals in disease modeling
+Conference_F1: Math Ecology and Math Epidemiology Workshop
+Conference_F2: IBENS Mini-symposium on Modeling Epidemics and Behaviour
+Conference_F3: Mathematical Biology Seminar
+Date_F1: May 2023
+Date_F2: May 2022
+Date_F3: March 2024
+City_F1: Hong Kong Polytechnic U.
+City_F2: Ecóle Normale Superieure, Paris
+City_F3: U. Maryland
+Presentation_Year_F1: 2023
+Presentation_Year_F2: 2022
+Presentation_Year_F3: 2024
+Location_F1: Hong Kong
+Location_F2: France
+Location_F3: United States of America
 
 Presentation: Mathematical modeling of infectious disease
-Conference: National Taiwan Normal University Controlling COVID Lecture Series
+Conference_F1: National Taiwan Normal University Controlling COVID Lecture Series
+Conference_F2: National Taiwan Normal University­– Controlling COVID Lecture Series
 Date: Apr 2023
 City: National Taiwan University, Taipei
+Presentation_Year: 2023
+Location: Taiwan
 
 Presentation: Dynamical models of disease spread
 Conference: College of Public Health Seminar
 Date: Mar 2023
 City: National Taiwan University, Taipei
-
-Presentation: Transmission intervals in disease modeling Paris
-Conference: IBENS Mini-symposium on Modeling Epidemics and Behaviour
-Date: May 2022
-City: Ecóle Normale Superieure, Paris
+Presentation_Year: 2023
+Location: Taiwan
 
 Presentation: Predictions and effects
 Conference: McMaster Statistics Seminar
 Date: Mar 2022
 City: Hamilton
+Presentation_Year: 2022
+Location: Canada
 
 Presentation: Transmission intervals and COVID control
 Conference: U. Florida Biomath Seminar
 Date: Mar 2022
 City: Online
+Presentation_Year: 2022
+Location: United States of America
 
 Presentation: Approaches to COVID modeling
 Conference: U. Utah CO4 Group
 City: Online
 Date: Feb 2021
+Location: United States of America
+Presentation_Year: 2021
 
 Presentation: Transmission intervals and COVID Control
-Conference: PHAC Technical Tuesday Presentation
+Conference_F1: PHAC Technical Tuesday Presentation
+Conference_F2: U Texas Covid modeling consortium
 Date: May 2021
-
-Presentation: Transmission intervals and COVID Control
-Conference: U Texas Covid modeling consortium
-Date: May 2021
+Presentation_Year: 2021
+Location_F1: Canada
+Location_F2: United States of America
+City: Online
 
 Presentation: Defining, estimating and applying transmission-interval distributions
 Conference: Society for Mathematical Biology Annual meeting
 City: Montreal
 Date: Jun 2021
+Location: Canada
+Presentation_Year: 2021
 
+Presentation: 
 Conference: iFAST Theoretical Ecology symposium to celebrate the 80th birthday of Simon Levin
 Date: Jul 2021
 City: Online
 Role: Panelist
 
 Presentation: Time distributions and coronavirus control
-Conference: UNAM Seminar Series: COVID-19
+Conference_F1: UNAM Seminar Series: COVID-19
+Conference_F2: UNAM Seminar Series – COVID-19
 City: Online
 Date: Dec 2020
+Location: Mexico
+Presentation_Year: 2020
 
 Presentation: Time distributions and coronavirus modeling
 Conference: Georgia Tech COVID Incubator
 City: Online
 Date: Nov 2020
+Location: United States of America
+Presentation_Year: 2020
 
 Presentation: Delay distributions and coronavirus control
 Conference: Cornell Applied Mathematics Colloquium
 City: Online
 Date: October 2020
+Location: United States of America
+Presentation_Year: 2020
 
 Presentation: From 1918 to 2020: Analyzing the past and forecasting the Future
 Conference: PIMS/UBC Distinguished Speakers in Mathematical Biology Seminar
 Date: Jul 2020
 Author: David Earn, JD
 Role: Author_only
+Presentation_Year: 2020
+City: Online
+Location: Canada
+Co-Presenters: David Earn
 
 Presentation: Dynamical modeling of infectious diseases
 Conference: McMaster Global Health Webinar Series
 Date: May 2020
+Presentation_Year: 2020
+City: Online
+Location: Canada
 
 Presentation: Strength, speed and quickness: an approach to evaluating models of disease spread
 Conference: Fields Institute Mathematics of COVID-19 meeting
 Date: Feb 2020
+Presentation_Year: 2020
+City: Online
+Location: Canada
 
 Presentation: The dynamics of infectious disease outbreaks
 Conference: McMaster University Biology seminar
 Date: Feb 2020
+Presentation_Year: 2020
+City: Online
+Location: Canada
 
 Presentation: Estimating epidemic speed and strength: The role of generation intervals
 Conference: Biodiversity, Animal Health \& Comparative medicine Institute Seminar, U. Glasgow
 Date: Oct 2019
+Presentation_Year: 2019
+Location: United Kingdom
 
 Presentation: Modeling and estimating generation intervals
-Conference: Institute of Statistical Mathematics, Tachikawa, Tokyo
+Conference_F1: Institute of Statistical Mathematics, Tachikawa, Tokyo
+Conference_F2: Institute of Statistical Mathematics, Tokyo
 Date: Aug 2019
+Presentation_Year: 2019
+Location: Japan
 
 Presentation: God's estimator: Using the concept of mean species rarity to estimate diversity with Hill numbers
 Conference: ESA Annual Meeting
@@ -107,150 +153,46 @@ Role: Author_only
 Author: M Roswell, R Winfree, J Dushoff
 
 Presentation: Thoughts about modeling time since infection
-Conference: Society of Mathematical Biology Minisymposium Discussion, Montreal
+Conference_F1: Society of Mathematical Biology Minisymposium Discussion, Montreal
+Conference_F2: Society of Mathematical Biology Minisymposium Discussion
 Date: Jul 2019
+City: U. Montreal
+Location: Canada
+Presentation_Year: 2019
 
 Presentation: Bridging between statistics and science: Some philosophical claptrap
 Conference: Banff International Research Station workshop on Mathematical and Statistical Challenges in Bridging Model Development, Parameter Identification and Model Selection in the Biological Sciences
 Date: Nov 2018
+Location: Canada
+City: Banff
+Presentation_Year: 2018
 
 Presentation: Forecasting infectious-disease outbreaks: The role of generation intervals
 Conference: University of Chicago Ecology and Evolution Seminar
 Date: Oct 2018
+Location: United States of America
+Presentation_Year: 2018
 
 Presentation: Statistical philosophy and the language of significance
 Conference: University of Chicago Darwin weekly talk
 Date: Oct 2018
+Location: United States of America
+City: Chicago
+Presentation_Year: 2018
 
 Presentation: Mathematics and Rabies Control
-Conference: African Institute for Mathematical Sciences Public Lecture Cape Town, South Africa
+Conference_F1: African Institute for Mathematical Sciences Public Lecture Cape Town, South Africa
+Conference_F2: African Institute for Mathematical Sciences Public Lecture
 Date: June 2018
+Location: South Africa, Republic of
+Main: General Public
+Presentation_Year: 2018
 
-
-Presentation: Time distributions and coronavirus control
-Conference: UNAM Seminar Series – COVID-19
-Location: Mexico
-City: Online
-Presentation_Year: 2020
-
-Presentation_Year: 2020
-Presentation: Transmission intervals in disease modeling HK
-Conference: Math Ecology and Math Epidemiology Workshop
-Presentation_Year: 2023
-Location: Hong Kong
-City: Hong Kong Polytechnic U.
-
-Presentation: Mathematical modeling of infectious disease
-Conference: National Taiwan Normal University­– Controlling COVID Lecture Series
-Presentation_Year: 2023
-Location: Taiwan
-City: National Taiwan University, Taipei
-
-Presentation: Dynamical models of disease spread
-Conference: College of Public Health Seminar
-Presentation_Year: 2023
-Location: Taiwan
-City: National Taiwan University, Taipei
-
-Presentation: Transmission intervals in disease modeling Paris
-Conference: IBENS Mini-symposium on Modeling Epidemics and Behaviour
-Presentation_Year: 2022
-Location: France
-City: Ecóle Normale Superieure, Paris
-
-Presentation: Predictions and effects
-Conference: McMaster Statistics Seminar
-Presentation_Year: 2022
-Location: Canada
-City: Hamilton
-
-Presentation: Transmission intervals and COVID control
-Conference: U. Florida Biomath Seminar
-Presentation_Year: 2022
-Location: United States of America
-City: Online
-
-Presentation: Approaches to COVID modeling
-Conference: U. Utah CO4 Group
-Location: United States of America
-City: Online
-Presentation_Year: 2021
-
-Presentation: Transmission intervals and COVID Control
-Conference: PHAC Technical Tuesday Presentation
-Presentation_Year: 2021
-Location: Canada
-City: Online
-
-Presentation: Transmission intervals and COVID Control
-Conference: U Texas Covid modeling consortium
-Presentation_Year: 2021
-Location: United States of America
-City: Online
-
-Presentation: Defining, estimating and applying transmission-interval distributions
-Conference: Society for Mathematical Biology Annual meeting
-Location: Canada
-City: Montreal
-Presentation_Year: 2021
-
+Presentation: 
 Conference: iFAST Theoretical Ecology symposium to celebrate the 80th birthday of Simon Levin
 Presentation_Year: 2021
 Location: United States of America
 City: Online
-
-Presentation: Time distributions and coronavirus modeling
-Conference: Georgia Tech COVID Incubator
-Location: United States of America
-City: Online
-Presentation_Year: 2020
-
-Presentation: Delay distributions and coronavirus control
-Conference: Cornell Applied Mathematics Colloquium
-Location: United States of America
-City: Online
-Presentation_Year: 2020
-
-Presentation: From 1918 to 2020: Analyzing the past and forecasting the Future
-Conference: PIMS/UBC Distinguished Speakers in Mathematical Biology Seminar
-Presentation_Year: 2020
-City: Online
-Location: Canada
-Co-Presenters: David Earn
-
-Presentation: Dynamical modeling of infectious diseases
-Conference: McMaster Global Health Webinar Series
-Presentation_Year: 2020
-City: Online
-Location: Canada
-
-Presentation: Strength, speed and quickness: an approach to evaluating models of disease spread
-Conference: Fields Institute Mathematics of COVID-19 meeting
-Presentation_Year: 2020
-City: Online
-Location: Canada
-
-Presentation: The dynamics of infectious disease outbreaks
-Conference: McMaster University Biology seminar
-Presentation_Year: 2020
-City: Online
-Location: Canada
-
-Presentation: Estimating epidemic speed and strength: The role of generation intervals
-Conference: Biodiversity, Animal Health \& Comparative medicine Institute Seminar, U. Glasgow
-Presentation_Year: 2019
-Location: United Kingdom
-
-Presentation: Modeling and estimating generation intervals
-Conference: Institute of Statistical Mathematics, Tokyo
-Presentation_Year: 2019
-Location: Japan
-
-Presentation: Thoughts about modeling time since infection
-Conference: Society of Mathematical Biology Minisymposium Discussion
-City: U. Montreal
-Location: Canada
-Presentation_Year: 2019
 
 Presentation: Interpreting data for acute respiratory infections: What can we infer from viral testing data?
 City: Brin Mathematics Research Center, U. Maryland
@@ -259,23 +201,16 @@ Date: November 2024
 Presentation_Year: 2024
 Location: United States of America
 
-Presentation: Transmission intervals in disease modeling Maryland
-Conference: Mathematical Biology Seminar
-City: U. Maryland
-Date: March 2024
-Presentation_Year: 2024
-Location: United States of America
-
 Presentation: Importance and Challenges of Dynamical Modeling for Infectious Disease Policy
-City: UNICEF McMaster 
+City: UNICEF McMaster
 Conference: Global Health – Intersectionality & Advocacy
 Date: March 2025
 Presentation_Year: 2025
 Location: Canada
 
+Presentation: Dynamical models of infectious-disease spread
 City: Georgia Southern University
 Conference: Department of Biostatistics, Epidemiology and Environmental Health Sciences Seminar
-Presentation: Dynamical models of infectious-disease spread
 Presentation_Year: 2025
 Date: April 2025
 Location: United States of America
@@ -288,29 +223,6 @@ Presentation_Year: Presentation Year
 Main: Main Audience
 Keynote: Keynote?
 Invited: Invited?
-
-Presentation: Bridging between statistics and science: Some philosophical claptrap
-Conference: Banff International Research Station workshop on Mathematical and Statistical Challenges in Bridging Model Development, Parameter Identification and Model Selection in the Biological Sciences
-Location: Canada
-City: Banff
-Presentation_Year: 2018
-
-Presentation: Forecasting infectious-disease outbreaks: The role of generation intervals
-Conference: University of Chicago Ecology and Evolution Seminar
-Location: United States of America
-Presentation_Year: 2018
-
-Presentation: Mathematics and Rabies Control
-Conference: African Institute for Mathematical Sciences Public Lecture
-Location: South Africa, Republic of
-Main: General Public
-Presentation_Year: 2018
-
-Presentation: Statistical philosophy and the language of significance
-Conference: University of Chicago Darwin weekly talk
-Location: United States of America
-City: Chicago
-Presentation_Year: 2018
 
 Presentation: Is Statistical "Significance" a Thing? Bridging between science and statistical theory
 Conference: McMaster Statistics Seminar,
@@ -375,27 +287,21 @@ City: Tempe
 Presentation_Year: 2014
 
 Presentation: Modeling the Evolution of Within-host Reproductive Rates in Pathogens
-Conference: Simons Institute: New Directions in Probabilistic Models of Evolution
-Location: United States of America
-City: Berkeley
-Presentation_Year: 2014
-
-Presentation: Modeling the Evolution of Within-host Reproductive Rates in Pathogens
-Conference: Academica Sinica Institute of Physics seminar
-Location: Taiwan
-City: Taipei
+Conference_F1: Simons Institute: New Directions in Probabilistic Models of Evolution
+Conference_F2: Academica Sinica Institute of Physics seminar
+Location_F1: United States of America
+Location_F2: Taiwan
+City_F1: Berkeley
+City_F2: Taipei
 Presentation_Year: 2014
 
 Presentation: Long-term relationships and routes of HIV transmission
-Conference: U. Michigan Center for the Study of Complex Systems symposium
-Location: United States of America
-City: Ann Arbor
-Presentation_Year: 2013
-
-Presentation: Long-term relationships and routes of HIV transmission
-Conference: McMaster University IIDR symposium
-Location: Canada
-City: Hamilton
+Conference_F1: U. Michigan Center for the Study of Complex Systems symposium
+Conference_F2: McMaster University IIDR symposium
+Location_F1: United States of America
+Location_F2: Canada
+City_F1: Ann Arbor
+City_F2: Hamilton
 Presentation_Year: 2013
 
 Presentation: Non-negative matrix factorization for metagenomic data analysis

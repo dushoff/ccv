@@ -51,9 +51,15 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 ######################################################################
 
 ## Build a presentations section?
+Sources += present.md
 
 ## Probably want to archive using tsv soon (see cron)
 Sources += present.pgr
+
+presentations.pgr: present.pgr pgrClean.py
+	$(PITH)
+
+
 
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.pip

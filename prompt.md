@@ -78,3 +78,21 @@ Header lines are incorrect (improperly indented, should be verbatim). They are a
 
 Almost perfect. The bracketing single quotes are not being reconstructed. And default values are being taken from the template only sometimes; they should be taken for any field that is missing from any record.
 
+----------------------------------------------------------------------
+
+Thanks, that all worked well. Now, I want to clean up my .pgr file. 
+Do you remember the .pgr format?
+
+I want a python script that starts with a function to read the records in a pgr file into a list of dictionaries, we will be using that again. 
+
+Then I want an inline part of the script that goes through the list and combines records with the same Presentation field and lists all different values for any other field in the combined record:
+* if two fields have different names, they should be preserved independently
+* if two fields have the same name and same value, one can be ignored
+* if two fields have the same name and different values I want them listed as separate fields using <fn>_F1, <fn>_F2, etc, where <fn> is the field name
+
+The script should start like this:
+```
+import re
+from sys import argv
+script, infile, template = argv
+```
