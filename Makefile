@@ -13,9 +13,8 @@ vim_session:
 
 Sources += $(wildcard *.md)
 
-######################################################################
-
 ## Comparisons for reverse engineering
+## see notes.md
 
 Ignore += $(wildcard *.xml *.XML)
 
@@ -25,9 +24,6 @@ Ignore += *.xmldiff *.diff
 	xmldiff $^ > $@
 
 ######################################################################
-
-## In way too much haste
-## Pay attention to what you are tracking, and where
 
 mirrors += earn
 
@@ -46,11 +42,11 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 %.collab.new.yaml: %.collab.pgr collab.tmp pgry.py
 	$(PITH)
 
-## jd.colla2.new.up.xml: jd.collab.pgr jd.collab.new.yaml
+## jd.collab.new.up.xml: jd.collab.pgr jd.collab.new.yaml
 
 ######################################################################
 
-## pgrClean is a temporary-use script for combining information from different sources to make a clean pgr for going forward
+## pgrClean is a one-use script (not a pipeline script) for combining information from different sources to make a clean pgr for going forward
 ## The pgr files here are dummies or may not exist – may be good to use for short-term cleaning
 new.pgr: dump.pgr pgrClean.py
 	$(PITH)
