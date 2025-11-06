@@ -16,7 +16,8 @@ Sources += $(wildcard *.md)
 ## Comparisons for reverse engineering
 ## see notes.md
 
-Ignore += $(wildcard *.xml *.XML)
+Sources += download.xml
+Ignore += $(wildcard *.XML)
 
 Ignore += *.xmldiff *.diff
 ## pubchange.xmldiff: start.XML pubchange.XML 
@@ -25,10 +26,13 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
+## Stuff below here is hasty NSERC stuff
+
 mirrors += earn
 
+collab = "Activities/International Collaboration Activities"
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< -f "Activities/International Collaboration Activities" $@
+	pyenv/bin/ccv_generator -i $< -f $(collab) $@
 
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
