@@ -11,3 +11,5 @@ Let's try this:
 * Use them to make up.yaml and XML
 
 For the future we can do branching, but for now just have a single download.xml? But shouldn't really download again now that we've started truncated updates.
+
+No collab (so far) in downloads.xml, so can't play with that pipeline

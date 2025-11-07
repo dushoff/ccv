@@ -16,9 +16,6 @@ Sources += $(wildcard *.md)
 ## Comparisons for reverse engineering
 ## see notes.md
 
-Sources += download.xml
-Ignore += $(wildcard *.XML)
-
 Ignore += *.xmldiff *.diff
 ## pubchange.xmldiff: start.XML pubchange.XML 
 %.xmldiff: start.XML %.XML 
@@ -26,10 +23,31 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
+Sources += download.xml
+Ignore += $(wildcard *.XML)
+
+Makefile: | ccv_generator.pip
+
+%.up.yaml: %.pgr %.tmp pgry.py
+	$(PITH)
+
+%.XML: %.up.yaml | ccv_generator.pip
+	pyenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
+
+######################################################################
+
+## collab pipeline starts here (made it from David's stuff!)
+
+## collab.up.yaml: collab.pgr pgry.py
+## collab.XML: collab.pgr
+
+######################################################################
+
 ## Stuff below here is hasty NSERC stuff
 
 mirrors += earn
 
+## Do we even need a collab variable now that we have collab.tmp?
 collab = "Activities/International Collaboration Activities"
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f $(collab) $@
@@ -41,12 +59,6 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
-
-.PRECIOUS: %.collab.new.yaml
-%.collab.new.yaml: %.collab.pgr collab.tmp pgry.py
-	$(PITH)
-
-## jd.collab.new.up.xml: jd.collab.pgr jd.collab.new.yaml
 
 ######################################################################
 
