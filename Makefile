@@ -23,6 +23,8 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
+## Generic rules
+
 Sources += download.xml
 Ignore += $(wildcard *.XML)
 
@@ -33,6 +35,10 @@ Makefile: | ccv_generator.pip
 
 %.XML: %.up.yaml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
+
+######################################################################
+
+## Build a pubs thing (with pre-processing)
 
 ######################################################################
 
