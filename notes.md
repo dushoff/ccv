@@ -1,5 +1,7 @@
 xmldiff works well and seems to confirm that there is _no_ selection data in the XML!
 
+The way to work around this is to select by simply not uploading what you don't want to show, but keep it safe elsewhere.
+
 What to do about colons in fields? I guess that's what the backquotes are for.
 
 ##### 2025 Nov 06 (Thu)
