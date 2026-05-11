@@ -1,4 +1,4 @@
-## This is CCV
+## This is CCV -- for common CV stuff only!
 current: target
 -include target.mk
 Ignore = target.mk
