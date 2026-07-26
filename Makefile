@@ -7,7 +7,7 @@ vim_session:
 	bash -ic "vmt README.md notes.md"
 
 ## -include makestuff/perl.def
-pyvenv: ; $(cleanpyvenv)
+pyvenv: ; $(systempyvenv)
 -include makestuff/pyvenv.mk
 -include makestuff/python.def
 
@@ -36,7 +36,7 @@ Makefile: | ccv_generator.pip
 	$(PITH)
 
 %.XML: %.up.yaml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
+	pyvenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
 
 ######################################################################
 
@@ -60,7 +60,7 @@ collab = "Activities/International Collaboration Activities"
 
 ## Something broken here 2026 Jul 26 (Sun)
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< -f $(collab) $@
+	pyvenv/bin/ccv_generator -i $< -f $(collab) $@
 
 ## Confusing debug from Claude. -p reveals the make DB!
 ## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
@@ -71,9 +71,16 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
 	$(PITH)
 
+## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+
+######################################################################
+
+## Debugging certificates or something?
+
+## openssl s_client -connect ccv-cvc.ca:443 -servername ccv-cvc.ca -showcerts </dev/null 2>/dev/null | grep -E "^(subject|issuer)="
 
 ######################################################################
 
@@ -92,11 +99,11 @@ Sources += present.pgr
 
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## jd.present.new.up.xml: jd.present.pgr
 %.up.xml: %.yaml | ccv_generator.pip
-	pyenv/bin/ccv_generator -i $< $@
+	pyvenv/bin/ccv_generator -i $< $@
 
 Sources += $(wildcard *.tmp)
 Sources += $(wildcard *.pgr)
@@ -124,14 +131,14 @@ current.present.old.up.xml: current.present.old.yaml
 
 ######################################################################
 
-pypath = pyenv
+pypath = pyvenv
 
 Ignore += *.yaml
 ## start.yaml: start.XML
 %.yaml: tmp.xml | ccv_generator.pip
 	$(ccvTrans)
 
-ccvTrans = pyenv/bin/ccv_generator -i $< $@
+ccvTrans = pyvenv/bin/ccv_generator -i $< $@
 
 ccv_generator.pip: | ruamel.yaml.pip
 

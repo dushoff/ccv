@@ -23,3 +23,7 @@ Trying to figure out what's going on…
 Try not to download from CCV anymore. We should be building here and uploading. This means that we need to rebuild every section that we want to update.
 
 Try to build a pubs something??
+
+Current pubs stuff process whole CCV, lives in nsercMixing repo
+
+No clear trace of what was done. Things are built from current.xml and tmp.xml, but only download.xml exists (including in log history).
