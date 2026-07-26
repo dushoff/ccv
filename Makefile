@@ -7,6 +7,8 @@ vim_session:
 	bash -ic "vmt README.md notes.md"
 
 ## -include makestuff/perl.def
+pyvenv: ; $(cleanpyvenv)
+-include makestuff/pyvenv.mk
 -include makestuff/python.def
 
 ######################################################################
@@ -153,7 +155,7 @@ makestuff:
 
 -include makestuff/os.mk
 
--include makestuff/pyenv.mk
+-include makestuff/pyvenv.mk
 -include makestuff/mirror.mk
 
 -include makestuff/git.mk
