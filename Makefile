@@ -4,7 +4,7 @@ current: target
 Ignore = target.mk
 
 vim_session:
-	bash -ic "vmt" notes.md
+	bash -ic "vmt README.md notes.md"
 
 ## -include makestuff/perl.def
 -include makestuff/python.def
@@ -60,11 +60,11 @@ collab = "Activities/International Collaboration Activities"
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f $(collab) $@
 
+## Confusing debug from Claude. -p reveals the make DB!
 ## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
 ## make -r earn.collab.pgr
 ## make -rd earn.collab.pgr > make.log
 
-## Not disabling this rule (pipe will break it for now because of PITH) 2026 Jul 26 (Sun)
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
 	$(PITH)
