@@ -55,9 +55,16 @@ mirrors += earn
 
 ## Do we even need a collab variable now that we have collab.tmp?
 collab = "Activities/International Collaboration Activities"
+
+## Something broken here 2026 Jul 26 (Sun)
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 	pyenv/bin/ccv_generator -i $< -f $(collab) $@
 
+## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
+## make -r earn.collab.pgr
+## make -rd earn.collab.pgr > make.log
+
+## Not disabling this rule (pipe will break it for now because of PITH) 2026 Jul 26 (Sun)
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
 	$(PITH)
