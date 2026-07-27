@@ -122,11 +122,11 @@ Sources += present.md
 Sources += present.pgr
 
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.pip
+%.present.yaml: %.xml | ccv_generator.pip downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## jd.present.new.up.xml: jd.present.pgr
-%.up.xml: %.yaml | ccv_generator.pip
+%.up.xml: %.yaml | ccv_generator.pip downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< $@
 
 Sources += $(wildcard *.tmp)
@@ -159,7 +159,7 @@ pypath = pyvenv
 
 Ignore += *.yaml
 ## start.yaml: start.XML
-%.yaml: tmp.xml | ccv_generator.pip
+%.yaml: tmp.xml | ccv_generator.pip downloader.ccvpatch
 	$(ccvTrans)
 
 ccvTrans = pyvenv/bin/ccv_generator -i $< $@
@@ -176,7 +176,7 @@ Ignore += makestuff
 msrepo = https://github.com/dushoff
 
 ## ln -s ../makestuff . ## Do this first if you want a linked makestuff
-Makefile: makestuff/00.stamp
+Makefile: makestuff/01.stamp
 makestuff/%.stamp: | makestuff
 	- $(RM) makestuff/*.stamp
 	cd makestuff && $(MAKE) pull
