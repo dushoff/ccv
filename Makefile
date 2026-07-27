@@ -7,9 +7,33 @@ vim_session:
 	bash -ic "vmt README.md notes.md"
 
 ## -include makestuff/perl.def
-pyvenv: ; $(systempyvenv)
+pyvenv: ; $(cleanpyvenv)
 -include makestuff/pyvenv.mk
 -include makestuff/python.def
+
+######################################################################
+
+## Bizarre auth fix from Claude 2026 Jul 26 (Sun)
+## Maybe go back and cache whatever it's always getting from internet
+
+## patching the package was not my first choice, but …
+Sources += $(wildcard *.patch)
+%.patch: %.py
+	- diff -u pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py $< > $@
+
+Ignore += *.ccvpatch
+## downloader.ccvpatch: downloader.patch
+%.ccvpatch: %.patch
+	patch pyvenv/lib/python3.12/site-packages/ccv_generator/$*.py < $<
+	$(touch)
+
+#### NOT USED
+## This suppressed the wrong stuff, apparently
+## sitecustomize.pypackage: sitecustomize.py
+Ignore += *.pypackage
+%.pypackage: %.py
+	$(CP) $< pyvenv/lib/python3*/site-packages/
+	$(touch)
 
 ######################################################################
 
@@ -73,7 +97,7 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 
 ## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.pip
+%.present.yaml: %.xml | ccv_generator.pip downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ######################################################################
@@ -162,7 +186,6 @@ makestuff:
 
 -include makestuff/os.mk
 
--include makestuff/pyvenv.mk
 -include makestuff/mirror.mk
 
 -include makestuff/git.mk
