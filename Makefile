@@ -126,6 +126,7 @@ Sources += present.pgr
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## jd.present.new.up.xml: jd.present.pgr
+Ignore += *.up.xml
 %.up.xml: %.yaml | ccv_generator.pip downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< $@
 
