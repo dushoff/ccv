@@ -27,3 +27,7 @@ Try to build a pubs something??
 Current pubs stuff process whole CCV, lives in nsercMixing repo
 
 No clear trace of what was done. Things are built from current.xml and tmp.xml, but only download.xml exists (including in log history).
+
+##### 2026 Jul 28 (Tue)
+
+Patched a bunch of ccvpatch logic, seems to kind of work now, try on siX

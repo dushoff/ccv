@@ -18,12 +18,14 @@ pyvenv: ; $(cleanpyvenv)
 
 ## patching the package was not my first choice, but …
 Sources += $(wildcard *.patch)
+Ignore += *.patch
+.PRECIOUS: %.patch
 %.patch: %.py
 	- diff -u pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py $< > $@
 
 Ignore += *.ccvpatch
 ## downloader.ccvpatch: downloader.patch
-%.ccvpatch: %.patch
+%.ccvpatch: %.patch | ccv_generator.pip
 	patch pyvenv/lib/python3.12/site-packages/ccv_generator/$*.py < $<
 	$(touch)
 
@@ -54,13 +56,14 @@ Ignore += *.xmldiff *.diff
 Sources += download.xml
 Ignore += $(wildcard *.XML)
 
-Makefile: | ccv_generator.pip
-
+.PRECIOUS: %.up.yaml
 %.up.yaml: %.pgr %.tmp pgry.py
 	$(PITH)
 
-%.XML: %.up.yaml | ccv_generator.pip
+%.XML: %.up.yaml | downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
+
+downloader.ccvpatch: ccv_generator.pip
 
 ######################################################################
 
@@ -97,7 +100,7 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 
 ## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.pip downloader.ccvpatch
+%.present.yaml: %.xml | downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ######################################################################
@@ -122,12 +125,12 @@ Sources += present.md
 Sources += present.pgr
 
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.pip downloader.ccvpatch
+%.present.yaml: %.xml | downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
 
 ## jd.present.new.up.xml: jd.present.pgr
 Ignore += *.up.xml
-%.up.xml: %.yaml | ccv_generator.pip downloader.ccvpatch
+%.up.xml: %.yaml | downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< $@
 
 Sources += $(wildcard *.tmp)
@@ -160,7 +163,7 @@ pypath = pyvenv
 
 Ignore += *.yaml
 ## start.yaml: start.XML
-%.yaml: tmp.xml | ccv_generator.pip downloader.ccvpatch
+%.yaml: tmp.xml | downloader.ccvpatch
 	$(ccvTrans)
 
 ccvTrans = pyvenv/bin/ccv_generator -i $< $@

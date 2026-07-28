@@ -1,5 +1,5 @@
---- pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py	2026-07-26 20:59:34.824623374 -0400
-+++ downloader.py	2026-07-26 21:03:33.195260308 -0400
+--- pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py	2026-07-28 16:23:40.644697021 -0400
++++ downloader.py	2026-07-28 16:00:15.642828568 -0400
 @@ -5,6 +5,9 @@
  from platformdirs import user_cache_dir
  from datetime import datetime, timedelta
@@ -19,3 +19,10 @@
  
      if response.status_code == 200:
          # Save the new file
+@@ -73,4 +76,4 @@
+     else:
+         response.raise_for_status()
+ 
+-    return filename
+\ No newline at end of file
++    return filename
