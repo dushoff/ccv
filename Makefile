@@ -59,6 +59,7 @@ journal.yaml: download.xml
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Publications/Journal Articles" $@
 
 ## Making .tmp by editing yaml
+Ignore += journal.PGR
 journal.PGR: journal.yaml journal.tmp ypgr.py
 	$(PITH)
 
