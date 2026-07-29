@@ -13,32 +13,6 @@ pyvenv: ; $(cleanpyvenv)
 
 ######################################################################
 
-## Bizarre auth fix from Claude 2026 Jul 26 (Sun)
-## Maybe go back and cache whatever it's always getting from internet
-
-## patching the package was not my first choice, but …
-Sources += $(wildcard *.patch)
-Ignore += *.patch
-.PRECIOUS: %.patch
-%.patch: %.py
-	- diff -u pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py $< > $@
-
-Ignore += *.ccvpatch
-## downloader.ccvpatch: downloader.patch
-%.ccvpatch: %.patch | ccv_generator.pip
-	patch pyvenv/lib/python3.12/site-packages/ccv_generator/$*.py < $<
-	$(touch)
-
-#### NOT USED
-## This suppressed the wrong stuff, apparently
-## sitecustomize.pypackage: sitecustomize.py
-Ignore += *.pypackage
-%.pypackage: %.py
-	$(CP) $< pyvenv/lib/python3*/site-packages/
-	$(touch)
-
-######################################################################
-
 Sources += $(wildcard *.md)
 
 ## Comparisons for reverse engineering
@@ -67,13 +41,32 @@ downloader.ccvpatch: ccv_generator.pip
 
 ######################################################################
 
+## Experimenting 2026 Jul 29 (Wed)
+
+## recipe line why needed??
+download.all.yaml: download.xml
+	pyvenv/bin/ccv_generator -i $< $@
+
+%.all.yaml: %.xml
+	pyvenv/bin/ccv_generator -i $< $@
+
+######################################################################
+
 ## Build a pubs thing (with pre-processing)
+## Sticking with the one-download idea right now 2026 Jul 29 (Wed)
+
+journal.yaml: download.xml
+	pyvenv/bin/ccv_generator -i $< -f "Contributions/Publications/Journal Articles" $@
+
+## Making .tmp by editing yaml
+journal.PGR: journal.yaml journal.tmp ypgr.py
+	$(PITH)
 
 ######################################################################
 
 ## collab pipeline starts here (made it from David's stuff!)
 
-## collab.up.yaml: collab.pgr pgry.py
+## collab.up.yaml: collab.pgr collab.tmp pgry.py
 ## collab.XML: collab.pgr
 
 ######################################################################
@@ -89,11 +82,6 @@ collab = "Activities/International Collaboration Activities"
 earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 	pyvenv/bin/ccv_generator -i $< -f $(collab) $@
 
-## Confusing debug from Claude. -p reveals the make DB!
-## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
-## make -r earn.collab.pgr
-## make -rd earn.collab.pgr > make.log
-
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
 	$(PITH)
@@ -102,6 +90,8 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | downloader.ccvpatch
 	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+
+%.all.yaml: %.xml
 
 ######################################################################
 
@@ -159,7 +149,7 @@ current.present.old.up.xml: current.present.old.yaml
 
 ######################################################################
 
-pypath = pyvenv
+## pypath = pyvenv
 
 Ignore += *.yaml
 ## start.yaml: start.XML
@@ -169,6 +159,37 @@ Ignore += *.yaml
 ccvTrans = pyvenv/bin/ccv_generator -i $< $@
 
 ccv_generator.pip: | ruamel.yaml.pip
+
+######################################################################
+
+## Bizarre auth fix from Claude 2026 Jul 26 (Sun)
+## Maybe go back and cache whatever it's always getting from internet
+
+## patching the package was not my first choice, but …
+Sources += $(wildcard *.patch)
+Ignore += *.patch
+.PRECIOUS: %.patch
+%.patch: %.py
+	- diff -u pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py $< > $@
+
+Ignore += *.ccvpatch
+## downloader.ccvpatch: downloader.patch
+%.ccvpatch: %.patch | ccv_generator.pip
+	patch pyvenv/lib/python3.12/site-packages/ccv_generator/$*.py < $<
+	$(touch)
+
+#### NOT USED
+## This suppressed the wrong stuff, apparently
+## sitecustomize.pypackage: sitecustomize.py
+Ignore += *.pypackage
+%.pypackage: %.py
+	$(CP) $< pyvenv/lib/python3*/site-packages/
+	$(touch)
+
+## Confusing debug from Claude. -p reveals the make DB!
+## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
+## make -r earn.collab.pgr
+## make -rd earn.collab.pgr > make.log
 
 ######################################################################
 
