@@ -40,6 +40,9 @@ ccv_generator: | ../ccv_generator
 ../ccv_generator: ../%:
 	cd .. && $(MAKE) $*
 
+ccv_generator/Makefile: | ccv_generator
+	cd ccv_generator && $(LNF) jd.mk Makefile
+
 Ignore += $(alldirs)
 
 ######################################################################
