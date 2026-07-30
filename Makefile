@@ -87,6 +87,7 @@ jtest: journal.PGR
 
 ## test.journal.up.yaml: test.journal.pgr journal.tmp
 test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
+%.journal.up.yaml: %.journal.pgr journal.tmp pgry.py
 	$(PITH)
 
 ## test.journal.XML: test.journal.pgr journal.tmp
@@ -95,9 +96,13 @@ test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
 ## First seriously curated journal.pgr
 ## Downloaded from CCV with collaborator symbols
 ## Eventually merge with all the Taiwan historical work?
+## Code for adding is still in cron but should be easy to move if this directory weren't such a mess
+## Added some symbols manually; need to upload to CCV
 ## first.journal.XML: first.journal.pgr
 
 ######################################################################
+
+## Not implemented, but implement if you have auth or connection problems
 
 Sources += dataset-cv.xml
 dataset-cv.xml:
