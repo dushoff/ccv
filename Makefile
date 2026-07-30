@@ -66,6 +66,8 @@ journal.PGR: journal.yaml journal.tmp ypgr.py
 test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
 	$(PITH)
 
+test.journal.XML:
+
 ######################################################################
 
 ## collab pipeline starts here (made it from David's stuff!)

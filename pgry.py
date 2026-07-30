@@ -9,6 +9,7 @@ tmpl_keys = []              # YAML field keys in order (excluding section indica
 tmpl_default_literal = {}   # YAML key -> literal default as in template (kept exactly)
 pgr_map = {}                # YAML key -> pgr key (from start words until unique)
 used_pgr = set()
+seen_dash = False
 
 field_prefix = {}           # YAML key -> exact prefix before the key (includes '- ' if present)
 field_has_dash = {}         # YAML key -> bool (template line had a dash before the key)
@@ -22,18 +23,23 @@ with open(template, 'r', encoding='utf-8') as f:
     for raw in f:
         line_nl = raw.rstrip('\n')
 
-        # Detect section/header lines BEFORE stripping comments:
-        # <=2 spaces indent, no tabs, no leading dash (content may contain ':'), and non-empty ignoring comments.
-        leading = re.match(r'^([ \t]*)', line_nl).group(1)
-        space_count = leading.count(' ')
-        tab_count = leading.count('\t')
+# Detect section/header lines: any non-empty line before the FIRST
+        # dashed (record) line counts as a header line, regardless of its
+        # indentation depth. This lets templates with 2-level, 3-level, or
+        # deeper headers all get echoed verbatim, since what matters is
+        # "comes before the record template starts", not how far indented.
         no_cmt = re.sub(r'\s*#.*$', '', line_nl)
-        if (tab_count == 0) and (space_count <= 2) and (not line_nl.lstrip().startswith('-')) and no_cmt.strip():
-            section_lines.append(line_nl)  # VERBATIM echo later
-            continue
+        is_dash_line = bool(re.match(r'^[ \t]*-', line_nl))
+
+        if is_dash_line:
+            seen_dash = True
+        elif not seen_dash:
+            if no_cmt.strip():
+                section_lines.append(line_nl)  # VERBATIM echo later
+            continue  # blank/comment-only lines before the first dash are dropped
 
         # Strip trailing comments for parsing fields, but preserve indentation/dash via regex
-        line_nc = re.sub(r'\s*#.*$', '', line_nl)
+        line_nc = no_cmt
         if not line_nc.strip():
             continue
         m = keyline_re.match(line_nc)
