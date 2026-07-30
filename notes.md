@@ -31,3 +31,7 @@ No clear trace of what was done. Things are built from current.xml and tmp.xml, 
 ##### 2026 Jul 28 (Tue)
 
 Patched a bunch of ccvpatch logic, seems to kind of work now, try on siX
+
+##### 2026 Jul 30 (Thu)
+
+Making up.yaml now. What is actually in CCV? How do I curate and add things going forward?

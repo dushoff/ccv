@@ -9,22 +9,24 @@ script, infile, template = argv
 tmpl_defaults = {}
 pgr_map = {}
 used_names = set()
+seen_dash = False
 
 with open(template, 'r', encoding='utf-8') as f:
     for raw in f:
         line_nl = raw.rstrip('\n')
 
-        # Detect and ignore section/header lines BEFORE stripping comments
-        leading = re.match(r'^([ \t]*)', line_nl).group(1)
-        space_count = leading.count(' ')
-        tab_count = leading.count('\t')
+# Detect and ignore section/header lines: anything before the
+        # FIRST dashed (record) line is a header, regardless of its
+        # indentation depth or whether it happens to contain a colon.
         no_cmt = re.sub(r'\s*#.*$', '', line_nl)
-        if (tab_count == 0) and (space_count <= 2) and (not line_nl.lstrip().startswith('-')) and no_cmt.strip() and (':' not in no_cmt):
-            # Ignore section line
+        is_dash_line = bool(re.match(r'^[ \t]*-', line_nl))
+        if is_dash_line:
+            seen_dash = True
+        elif not seen_dash:
             continue
 
         # Strip comments to parse actual fields
-        line = re.sub(r'\s*#.*$', '', line_nl).strip()
+        line = no_cmt.strip()
         if not line or ':' not in line:
             continue
         if line.startswith('-'):

@@ -25,6 +25,21 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
+## python package
+
+generator = pyvenv/bin/ccv_generator
+
+alldirs += ccv_generator
+ccv_generator.lpip: | ruamel.yaml.pip ccv_generator
+	pyvenv/bin/pip install -e ../ccv_generator
+	$(touch)
+
+ccv_generator: | ../ccv_generator
+	ln -fs ../$@/ .
+
+../ccv_generator:
+	cd .. && $(MAKE) $*
+
 ## Generic rules
 
 Sources += download.xml
@@ -37,7 +52,7 @@ Ignore += $(wildcard *.XML)
 %.XML: %.up.yaml | downloader.ccvpatch
 	$(generator) -i $< tmp.xml && $(MV) tmp.xml $@
 
-downloader.ccvpatch: ccv_generator.lpip
+## downloader.ccvpatch: ccv_generator.lpip
 
 ######################################################################
 
@@ -63,10 +78,20 @@ Ignore += journal.PGR
 journal.PGR: journal.yaml journal.tmp ypgr.py
 	$(PITH)
 
+jtest: journal.PGR
+	$(CP) $< test.journal.pgr
+
+## test.journal.up.yaml: test.journal.pgr journal.tmp
 test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
 	$(PITH)
 
-test.journal.XML:
+## test.journal.XML: test.journal.pgr journal.tmp
+## test.journal.XML: test.journal.pgr test.journal.up.yaml
+
+## First seriously curated journal.pgr
+## Downloaded from CCV with collaborator symbols
+## Eventually merge with all the Taiwan historical work?
+## first.journal.XML: first.journal.pgr
 
 ######################################################################
 
@@ -170,10 +195,6 @@ Ignore += *.yaml
 
 ccvTrans = $(generator) -i $< $@
 
-alldirs += ccv_generator
-ccv_generator.lpip: | ruamel.yaml.pip
-	pyvenv/bin/pip install -e ../ccv_generator
-
 ######################################################################
 
 ## Move this stuff to new package
@@ -188,6 +209,7 @@ Ignore += *.patch
 %.patch: %.py
 	- diff -u $(generator)/$< $< > $@
 
+## /home/dushoff/terminal/dirs/ccv/pyvenv/bin/pip show -f ccv-generator
 ## downloader.ccvpatch: downloader.patch
 ## downloader.ccvpatch: downloader.patch
 %.ccvpatch: %.patch | ccv_generator.lpip
