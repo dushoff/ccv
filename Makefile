@@ -35,9 +35,9 @@ Ignore += $(wildcard *.XML)
 	$(PITH)
 
 %.XML: %.up.yaml | downloader.ccvpatch
-	pyvenv/bin/ccv_generator -i $< tmp.xml && $(MV) tmp.xml $@
+	$(generator) -i $< tmp.xml && $(MV) tmp.xml $@
 
-downloader.ccvpatch: ccv_generator.pip
+downloader.ccvpatch: ccv_generator.lpip
 
 ######################################################################
 
@@ -45,10 +45,10 @@ downloader.ccvpatch: ccv_generator.pip
 
 ## recipe line why needed??
 download.all.yaml: download.xml
-	pyvenv/bin/ccv_generator -i $< $@
+	$(generator) -i $< $@
 
 %.all.yaml: %.xml
-	pyvenv/bin/ccv_generator -i $< $@
+	$(generator) -i $< $@
 
 ######################################################################
 
@@ -56,7 +56,7 @@ download.all.yaml: download.xml
 ## Sticking with the one-download idea right now 2026 Jul 29 (Wed)
 
 journal.yaml: download.xml
-	pyvenv/bin/ccv_generator -i $< -f "Contributions/Publications/Journal Articles" $@
+	$(generator) -i $< -f "Contributions/Publications/Journal Articles" $@
 
 ## Making .tmp by editing yaml
 Ignore += journal.PGR
@@ -67,6 +67,12 @@ test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
 	$(PITH)
 
 test.journal.XML:
+
+######################################################################
+
+Sources += dataset-cv.xml
+dataset-cv.xml:
+	curl -Lko $@ https://ccv-cvc.ca/schema/$@
 
 ######################################################################
 
@@ -85,8 +91,8 @@ mirrors += earn
 collab = "Activities/International Collaboration Activities"
 
 ## Something broken here 2026 Jul 26 (Sun)
-earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
-	pyvenv/bin/ccv_generator -i $< -f $(collab) $@
+earn.collab.yaml: earn/ccv.xml | ccv_generator.lpip
+	$(generator) -i $< -f $(collab) $@
 
 ## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
 %.collab.pgr: %.collab.yaml collab.tmp ypgr.py
@@ -94,8 +100,8 @@ earn.collab.yaml: earn/ccv.xml | ccv_generator.pip
 
 ## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | downloader.ccvpatch
-	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+%.present.yaml: %.xml | ccv_generator.lpip
+	$(generator) -i $< -f "Contributions/Presentations" $@
 
 %.all.yaml: %.xml
 
@@ -121,13 +127,13 @@ Sources += present.md
 Sources += present.pgr
 
 ## current.present.yaml: current.xml
-%.present.yaml: %.xml | downloader.ccvpatch
-	pyvenv/bin/ccv_generator -i $< -f "Contributions/Presentations" $@
+%.present.yaml: %.xml | ccv_generator.lpip
+	$(generator) -i $< -f "Contributions/Presentations" $@
 
 ## jd.present.new.up.xml: jd.present.pgr
 Ignore += *.up.xml
-%.up.xml: %.yaml | downloader.ccvpatch
-	pyvenv/bin/ccv_generator -i $< $@
+%.up.xml: %.yaml | ccv_generator.lpip
+	$(generator) -i $< $@
 
 Sources += $(wildcard *.tmp)
 Sources += $(wildcard *.pgr)
@@ -159,14 +165,18 @@ current.present.old.up.xml: current.present.old.yaml
 
 Ignore += *.yaml
 ## start.yaml: start.XML
-%.yaml: tmp.xml | downloader.ccvpatch
+%.yaml: tmp.xml | ccv_generator.lpip
 	$(ccvTrans)
 
-ccvTrans = pyvenv/bin/ccv_generator -i $< $@
+ccvTrans = $(generator) -i $< $@
 
-ccv_generator.pip: | ruamel.yaml.pip
+alldirs += ccv_generator
+ccv_generator.lpip: | ruamel.yaml.pip
+	pyvenv/bin/pip install -e ../ccv_generator
 
 ######################################################################
+
+## Move this stuff to new package
 
 ## Bizarre auth fix from Claude 2026 Jul 26 (Sun)
 ## Maybe go back and cache whatever it's always getting from internet
@@ -176,12 +186,12 @@ Sources += $(wildcard *.patch)
 Ignore += *.patch
 .PRECIOUS: %.patch
 %.patch: %.py
-	- diff -u pyvenv/lib/python3.12/site-packages/ccv_generator/downloader.py $< > $@
+	- diff -u $(generator)/$< $< > $@
 
-Ignore += *.ccvpatch
 ## downloader.ccvpatch: downloader.patch
-%.ccvpatch: %.patch | ccv_generator.pip
-	patch pyvenv/lib/python3.12/site-packages/ccv_generator/$*.py < $<
+## downloader.ccvpatch: downloader.patch
+%.ccvpatch: %.patch | ccv_generator.lpip
+	patch $(generator)/$*.py < $<
 	$(touch)
 
 #### NOT USED
