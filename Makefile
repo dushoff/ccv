@@ -102,6 +102,22 @@ test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
 
 ######################################################################
 
+## Using biography directory
+
+pardirs += biography
+hotdirs += biography
+
+## A bit wasteful if I am always opening biography to work there
+## Do need to Ignore, though
+alldirs += $(pardirs)
+
+ccv.journal.up.yaml: biography/ccvpubs.2020.newyear.pgr journal.tmp pgry.py
+	$(PITH)
+
+## ccv.journal.XML: 
+
+######################################################################
+
 ## Not implemented, but implement if you have auth or connection problems
 
 Sources += dataset-cv.xml
@@ -259,6 +275,7 @@ makestuff:
 -include makestuff/os.mk
 
 -include makestuff/mirror.mk
+-include makestuff/hotcold.mk
 
 -include makestuff/git.mk
 -include makestuff/visual.mk
