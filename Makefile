@@ -40,6 +40,10 @@ ccv_generator: | ../ccv_generator
 ../ccv_generator:
 	cd .. && $(MAKE) $*
 
+Ignore += $(alldirs)
+
+######################################################################
+
 ## Generic rules
 
 Sources += download.xml
