@@ -63,6 +63,9 @@ Ignore += journal.PGR
 journal.PGR: journal.yaml journal.tmp ypgr.py
 	$(PITH)
 
+test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
+	$(PITH)
+
 ######################################################################
 
 ## collab pipeline starts here (made it from David's stuff!)

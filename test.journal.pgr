@@ -1,0 +1,1234 @@
+Article: Article Title
+Journal__2: Journal
+Volume: Volume
+Issue: Issue
+Page: Page Range
+Publishing: Publishing Status
+Year: Year
+Refereed: Refereed?
+Authors: Authors
+Open: Open Access?
+Contribution: Contribution Role
+
+Article: Attenuation of virulence in Yersinia pestis across three plague pandemics.
+Journal__2: Science (New York, N.Y.)
+Volume: 388
+Issue: 6750
+Page: eadt3880
+Publishing: Published
+Year: 2025
+Refereed: Yes
+Authors: Sidhu RK , Mas Fiol G , Lê-Bury P , Demeure CE , Bougit E , Beau R , Balière C , Kwasiborski A , Caro V , Klunk J , Salkeld DJ , Carmichael A , Varlik N , Poinar D , Earn DJD , Bolker BM , Dushoff J , Golding GB , Rascovan N , Dussurget O , Holmes EC , Pizarro-Cerdá J , Poinar HN
+
+Article: Improved effectiveness of vaccination campaigns against rabies by reducing spatial heterogeneity in coverage.
+Journal__2: PLoS biology
+Volume: 23
+Issue: 5
+Page: e3002872
+Publishing: Published
+Year: 2025
+Refereed: Yes
+Authors: Ferguson EA , Lugelo A , Czupryna A , Anderson D , Lankester F , Sikana L , Dushoff J , Hampson K
+
+Article: Infections are not alike: the effects of covariation between individual susceptibility and transmissibility on epidemic dynamics.
+Journal__2: Journal of theoretical biology
+Page: 112211
+Publishing: Published
+Year: 2025
+Refereed: Yes
+Authors: Harris JD , Gallmeier E , Dushoff J , Beckett SJ , Weitz JS
+
+Article: A generalised catalytic model to assess changes in risk for multiple reinfections with SARS-CoV-2.
+Journal__2: PloS one
+Volume: 20
+Issue: 1
+Page: e0315476
+Publishing: Published
+Year: 2025
+Refereed: Yes
+Open: Yes
+Authors: Lombard B^ , Cohen C , von Gottberg A , Dushoff J , Pulliam JRC , van Schalkwyk C^
+
+Article: Consolidating Estimates of the Incubation Period for Omicron Subvariants From the Literature and Their Comparison to the Estimate From Taiwan: A Systematic Review and Meta-Analysis, September 2024.
+Journal__2: Influenza and other respiratory viruses
+Volume: 19
+Issue: 11
+Page: e70171
+Publishing: Published
+Year: 2025
+Refereed: Yes
+Authors: Akhmetzhanov AR* , Cheng HY , Cheng G , Dushoff J
+
+Article: Best practices for estimating and reporting epidemiological delay distributions of infectious diseases.
+Journal__2: PLoS computational biology
+Volume: 20
+Issue: 10
+Page: e1012520
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Charniga K , Park SW* , Akhmetzhanov AR* , Cori A , Dushoff J , Funk S , Gostic KM , Linton NM , Lison A , Overton CE , Pulliam JRC , Ward T , Cauchemez S , Abbott S
+
+Article: Mathematical modelling for pandemic preparedness in Canada: Learning from COVID-19.
+Journal__2: Canada communicable disease report = Releve des maladies transmissibles au Canada
+Volume: 50
+Issue: 10
+Page: 345-356
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Ogden NH , Acheson ES , Brown K , Champredon D* , Colijn C , Diener A , Dushoff J , Earn DJ , Gabriele-Rivet V , Gangbè M , Guillouzic S , Hennessy D , Hongoh V , Hurford A , Kanary L , Li M* , Ng V , Otto SP , Papst I , Rees EE , Tuite A , MacLeod MR , Murall CL , Waddell L , Wasfi R , Wolfson M
+
+Article: SARS-CoV-2 Incubation Period during Omicron BA.5-Dominant Period, Japan.
+Journal__2: Emerging infectious diseases
+Volume: 30
+Issue: 1
+Page: 206-207
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Cheng HY , Akhmetzhanov AR* , Dushoff J
+
+Article: The probability of epidemic burnout in the stochastic SIR model with vital dynamics.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 121
+Issue: 5
+Page: e2313708120
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Parsons TL , Bolker BM , Dushoff J , Earn DJD
+
+Article: Examining the molecular clock hypothesis for the contemporary evolution of the rabies virus.
+Journal__2: PLoS pathogens
+Volume: 20
+Issue: 11
+Page: e1012740
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Durrant R* , Cobbold CA , Brunker K , Campbell K , Dushoff J , Ferguson EA , Jaswant G , Lugelo A , Lushasi K , Sikana L , Hampson K
+
+Article: Incubation Period and Serial Interval of Mpox in 2022 Global Outbreak Compared with Historical Estimates.
+Journal__2: Emerging infectious diseases
+Volume: 30
+Issue: 6
+Page: 1173-1181
+Publishing: Published
+Year: 2024
+Refereed: Yes
+Authors: Ponce L , Linton NM , Toh WH , Cheng HY , Thompson RN , Akhmetzhanov AR* , Dushoff J
+
+Article: Inferring the differences in incubation-period and generation-interval distributions of the Delta and Omicron variants of SARS-CoV-2.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 120
+Issue: 22
+Page: e2221887120
+Publishing: Published
+Year: 2023
+Refereed: Yes
+Authors: Park SW* , Sun K , Abbott S , Sender R , Bar-On YM , Weitz JS , Funk S , Grenfell BT , Backer JA , Wallinga J , Viboud C , Dushoff J
+
+Article: Intermediate levels of asymptomatic transmission can lead to the highest epidemic fatalities.
+Journal__2: PNAS nexus
+Volume: 2
+Issue: 4
+Page: pgad106
+Publishing: Published
+Year: 2023
+Refereed: Yes
+Authors: Park SW* , Dushoff J , Grenfell BT , Weitz JS
+
+Article: How time-scale differences in asymptomatic and symptomatic transmission shape SARS-CoV-2 outbreak dynamics.
+Journal__2: Epidemics
+Volume: 42
+Page: 100664
+Publishing: Published
+Year: 2023
+Refereed: Yes
+Authors: Harris JD , Park SW* , Dushoff J , Weitz JS
+
+Article: Comparing machine learning approaches to incorporate time-varying covariates in predicting cancer survival time.
+Journal__2: Scientific reports
+Volume: 13
+Issue: 1
+Page: 1370
+Publishing: Published
+Year: 2023
+Refereed: Yes
+Authors: Cygu S* , Seow H , Dushoff J , Bolker BM
+
+Article: Evaluating undercounts in epidemics: response to Maruotti et al. 2022.
+Journal__2: jJournal of medical virology
+Volume: ePub
+Page: Ahead of print
+Publishing: Published
+Year: 2023
+Refereed: Yes
+Authors: Li M* , Dushoff J , Earn DJD , Bolker BM
+
+Article: The unmitigated profile of COVID-19 infectiousness.
+Journal__2: eLife
+Volume: 11
+Page: 79134
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Sender R , Bar-On Y , Park SW* , Noor E , Dushoff J , Milo R
+
+Article: The need for linked genomic surveillance of SARS-CoV-2.
+Journal__2: Canada communicable disease report = Releve des maladies transmissibles au Canada
+Volume: 48
+Issue: 4
+Page: 131-139
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Colijn C , Earn DJ , Dushoff J , Ogden NH , Li M* , Knox N , Van Domselaar G , Franklin K , Jolly G , Otto SP
+
+Article: Testing and Isolation Efficacy: Insights from a Simple Epidemic Model.
+Journal__2: Bulletin of mathematical biology
+Volume: 84
+Issue: 6
+Page: 66
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Gharouni A* , Abdelmalek FM , Earn DJD , Dushoff J , Bolker BM
+
+Article: Increased risk of SARS-CoV-2 reinfection associated with emergence of Omicron in South Africa.
+Journal__2: Science (New York, N.Y.)
+Volume: 376
+Issue: 6593
+Page: eabn4947
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Pulliam JRC , van Schalkwyk C^ , Govender N , von Gottberg A , Cohen C , Groome MJ , Dushoff J , Mlisana K , Moultrie H
+
+Article: The importance of the generation interval in investigating dynamics and control of new SARS-CoV-2 variants.
+Journal__2: Journal of the Royal Society, Interface
+Volume: 19
+Issue: 191
+Page: 20220173
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Park SW* , Bolker BM , Funk S , Metcalf CJE , Weitz JS , Grenfell BT , Dushoff J
+
+Article: From science to politics: COVID-19 information fatigue on YouTube.
+Journal__2: BMC public health
+Volume: 22
+Issue: 1
+Page: 816
+Publishing: Published
+Year: 2022
+Refereed: Yes
+Authors: Shi CF , So MC* , Stelmach S* , Earn A , Earn DJD , Dushoff J
+
+Article: Speed and strength of an epidemic intervention.
+Journal__2: Proceedings. Biological sciences
+Volume: 288
+Issue: 1947
+Page: 20201556
+Publishing: Published
+Year: 2021
+Refereed: Yes
+Authors: Dushoff J , Park SW
+
+Article: Does Counting Different Life Stages Impact Estimates for Extinction Probabilities for Tsetse (Glossina spp)?
+Journal__2: Bulletin of mathematical biology
+Volume: 83
+Issue: 9
+Page: 94
+Publishing: Published
+Year: 2021
+Refereed: Yes
+Authors: Are EB^ , Hargrove JW , Dushoff J
+
+Article: Forward-looking serial intervals correctly link epidemic growth to reproduction numbers.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 118
+Issue: 2
+Page: e2011548118
+Publishing: Published
+Year: 2021
+Refereed: Yes
+Authors: Park SW* , Sun K , Champredon D* , Li M* , Bolker BM , Earn DJD , Weitz JS , Grenfell BT , Dushoff J
+
+Article: Age-dependence of healthcare interventions for COVID-19 in Ontario, Canada.
+Journal__2: BMC public health
+Volume: 21
+Issue: 1
+Page: 706
+Publishing: Published
+Year: 2021
+Refereed: Yes
+Authors: Papst I , Li M* , Champredon D* , Bolker BM , Dushoff J , D Earn DJ
+
+Article: The origins and potential future of SARS-CoV-2 variants of concern in the evolving COVID-19 pandemic.
+Journal__2: Current biology : CB
+Volume: 31
+Issue: 14
+Page: R918-R929
+Publishing: Published
+Year: 2021
+Refereed: Yes
+Authors: Otto SP , Day T , Arino J , Colijn C , Dushoff J , Li M* , Mechai S , Van Domselaar G , Wu J , Earn DJD , Ogden NH
+
+Article: Awareness-driven behavior changes can shift the shape of epidemics away from peaks and toward plateaus, shoulders, and oscillations.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 117
+Page: 32764
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Weitz JS , Park SW* , Eksin C , Dushoff J
+
+Article: Calibration of individual-based models to epidemiological data: A systematic review.
+Journal__2: PLoS computational biologyf
+Volume: 16
+Issue: 5
+Page: e1007893
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Hazelbag CM^ , Dushoff J , Dominic EM^ , Mthombothi ZE^ , Delva W^
+
+Article: Inferring generation-interval distributions from contact-tracing data.
+Journal__2: Journal of the Royal Society, Interface
+Volume: 17
+Issue: 167
+Page: 20190719
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Park SW* , Champredon D* , Dushoff J
+
+Article: Modifiable factors related to life-space mobility in community-dwelling older adults: results from the Canadian Longitudinal Study on Aging
+Journal__2: BMC geriatrics
+Volume: 20
+Issue: 1
+Page: 35
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Kuspinar, A and Verschoor, CP and Beauchamp, MK and Dushoff, J and Ma, J and Amster, E and Bassim, C and Dal Bello-Haas, V and Gregory, MA and Harris, JE and others
+
+Article: Modeling shield immunity to reduce COVID-19 epidemic spread.
+Journal__2: Nature medicine
+Volume: 26
+Issue: 6
+Page: 849-854
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Weitz JS , Beckett SJ , Coenen AR , Demory D , Dominguez-Mirazo M , Dushoff J , Leung CY , Li G , Măgălie A , Park SW* , Rodriguez-Gonzalez R , Shivam S , Zhao CY
+
+Article: The time scale of asymptomatic transmission affects estimates of epidemic potential in the COVID-19 outbreak.
+Journal__2: Epidemics
+Volume: 31
+Page: 100392
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Park SW* , Cornforth DM , Dushoff J , Weitz JS
+
+Article: Potential Role of Social Distancing in Mitigating Spread of Coronavirus Disease, South Korea.
+Journal__2: Emerging infectious diseases
+Volume: 26
+Issue: 11
+Page: 2697-2700
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Park SW* , Sun K , Viboud C , Grenfell BT , Dushoff J
+
+Article: Acceleration of plague outbreaks in the second pandemic.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 117
+Issue: 44
+Page: 27703-27711
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Earn DJD , Ma J , Poinar H , Dushoff J , Bolker BM
+
+Article: Reconciling early-outbreak estimates of the basic reproductive number and its uncertainty: framework and applications to the novel coronavirus (SARS-CoV-2) outbreak.
+Journal__2: Journal of the Royal Society, Interface
+Volume: 17
+Issue: 168
+Page: 20200144
+Publishing: Published
+Year: 2020
+Refereed: Yes
+Authors: Park SW* , Bolker BM , Champredon D* , Earn DJD , Li M* , Weitz JS , Grenfell BT , Dushoff J
+
+Article: Male and female bees show large differences in floral preference
+Journal__2: PloS one
+Volume: 14
+Issue: 4
+Page: e0214909
+Publishing: Published
+Year: 2019
+Refereed: Yes
+Authors: Roswell, Michael* and Dushoff, Jonathan and Winfree, Rachael
+
+Article: Patterns of seasonal and pandemic influenza-associated health care and mortality in Ontario, Canada
+Journal__2: BMC public health
+Volume: 19
+Issue: 1
+Page: 1237
+Publishing: Published
+Year: 2019
+Refereed: Yes
+Authors: Li, Michael* and Bolker, Benjamin M and Dushoff, Jonathan and Ma, Junling and Earn, David JD
+
+Article: I can see clearly now: Reinterpreting statistical significance
+Journal__2: Methods in Ecology and Evolution
+Volume: 10
+Issue: 6
+Page: 756--759
+Publishing: Published
+Year: 2019
+Refereed: Yes
+Authors: Dushoff, Jonathan and Kain, Morgan P and Bolker, Benjamin M
+
+Article: Traditional male circumcision is associated with sexual risk behaviors in Sub-Saharan countries prioritized for male circumcision
+Journal__2: AIDS and Behavior
+Volume: 24
+Page: 951-959
+Publishing: Published
+Year: 2019
+Refereed: Yes
+Authors: Shi, Chyun and Li, Michael* and Dushoff, Jonathan
+
+Article: A practical generation-interval-based approach to inferring the strength of epidemics from their speed
+Journal__2: Epidemics
+Volume: E-pub
+Page: j.epidem.2018.12.002
+Publishing: Published
+Year: 2019
+Refereed: Yes
+Open: Yes
+Authors: Park, Sang Woo* and Champredon, David* and Weitz, Joshua S and Dushoff, Jonathan
+
+Article: Equivalence of the Erlang-Distributed SEIR Epidemic Model and the Renewal Equation
+Journal__2: SIAM Journal on Applied Mathematics
+Volume: 78
+Issue: 6
+Page: 3258--3278
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Champredon, David* and Dushoff, Jonathan and Earn, David JD
+
+Article: On the origin of obesity: identifying the biological, environmental and cultural drivers of genetic risk among human populations.
+Journal__2: Obesity reviews : an official journal of the International Association for the Study of Obesity
+Volume: 19
+Issue: 2
+Page: 121-149
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Qasim A , Turcotte M , de Souza RJ , Samaan MC , Champredon D* , Dushoff J , Speakman JR , Meyre D
+
+Article: Healthcare Resource Uses and Out-of-Pocket Expenses Associated with Pulmonary TB Treatment in Thailand.
+Journal__2: Pharmacoecon Open
+Volume: 2
+Page: 297-308
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Tanvejsilp, P.*  and Loeb, M.  and Dushoff, J.  and Xie, F.
+
+Article: Partner age differences and associated sexual risk behaviours among adolescent girls and young women in a cash transfer programme for schooling in Malawi.
+Journal__2: BMC Public Health
+Volume: 18
+Page: 403
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Beauclair, R.^  and Dushoff, J.  and Delva, W.^
+
+Article: Stochastic simulation of multiscale complex systems with PISKaS: A rule-based approach.
+Journal__2: Biochem Biophys Res Commun
+Volume: 498
+Page: 342-351
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Perez-Acle, T.*  and Fuenzalida, I.  and Martin, A. J. M.  and Santibanez, R.  and Avaria, R.  and Bernardin, A.  and Bustos, A. M.  and Garrido, D.  and Dushoff, J.  and Liu, J. H.
+
+Article: Fitting mechanistic epidemic models to data: A comparison of simple Markov chain Monte Carlo approaches.
+Journal__2: Stat Methods Med Res
+Volume: 27
+Page: 1956-1967
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Li, M.*  and Dushoff, J.  and Bolker, B. M.
+
+Article: Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models.
+Journal__2: Proc Natl Acad Sci U S A
+Volume: 115
+Page: E7892-E7893
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Park, S. W.*  and Dushoff, J.  and Earn, D. J. D.  and Poinar, H.  and Bolker, B. M.
+
+Article: Couple serostatus patterns in sub-Saharan Africa illuminate the relative roles of transmission rates and sexual network characteristics in HIV epidemiology.
+Journal__2: Sci Rep
+Volume: 8
+Page: 6675
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Bellan, S. E.^  and Champredon, D.*  and Dushoff, J.  and Meyers, L. A.
+
+Article: Out-of-Pocket Expenditures, Indirect Costs and Health-Related Quality of Life of Patients with Pulmonary Tuberculosis in Thailand.
+Journal__2: Pharmacoecon Open
+Volume: 2
+Page: 281-296
+Publishing: Published
+Year: 2018
+Refereed: Yes
+Authors: Tanvejsilp, P.*  and Loeb, M.  and Dushoff, J.  and Xie, F.
+
+Article: A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?
+Journal__2: Sexually transmitted infections
+Volume: 93
+Issue: 5
+Page: 374-378
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Rekart ML , Ndifon W , Brunham RC , Dushoff J , Park SW* , Rawat S , Cameron CE
+
+Article: Lysis, lysogeny and virus-microbe ratios.
+Journal__2: Nature
+Volume: 549
+Issue: 7672
+Page: E1-E3
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Weitz JS , Beckett SJ , Brum JR , Cael BB , Dushoff J
+
+Article: Patterns of influenza vaccination coverage in the United States from 2009 to 2015.
+Journal__2: International journal of infectious diseases : IJID : official publication of the International Society for Infectious Diseases
+Volume: 65
+Page: 122-127
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Chiu APY , Dushoff J , Yu D , He D
+
+Article: Kaiso is highly expressed in TNBC tissues of women of African ancestry compared to Caucasian women.
+Journal__2: Cancer causes & control : CCC
+Volume: 28
+Issue: 11
+Page: 1295-1304
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Bassey-Archibong BI , Hercules SM , Rayner LGA , Skeete DHA , Smith Connell SP , Brain I , Daramola A , Banjo AAF , Byun JS , Gardner K , Dushoff J , Daniel JM
+
+Article: Eco-Evolutionary Theory and Insect Outbreaks.
+Journal__2: The American naturalist
+Volume: 189
+Issue: 6
+Page: 616-629
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Páez DJ , Dukic V , Dushoff J , Fleming-Davies A , Dwyer G
+
+Article: Two approaches to forecast Ebola synthetic epidemics.
+Journal__2: Epidemics
+Volume: S1755-4365
+Page: 30023-3
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Champredon D* , Li M* , Bolker BM , Dushoff J
+
+Article: Role of pharmaceutical care for self-administered pulmonary tuberculosis treatment in Thailand.
+Journal__2: Journal of clinical pharmacy and therapeutics
+Volume: 42
+Issue: 3
+Page: 337-344
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Tanvejsilp P* , Pullenayegum E , Loeb M , Dushoff J , Xie F
+
+Article: Evidence that promotion of male circumcision did not lead to sexual risk compensation in prioritized Sub-Saharan countries.
+Journal__2: PloS one
+Volume: 12
+Issue: 4
+Page: e0175928
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Shi CF , Li M* , Dushoff J
+
+Article: Speciation over the edge: gene flow among non-human primate species across a formidable biogeographic barrier.
+Journal__2: Royal Society open science
+Volume: 4
+Issue: 10
+Page: 170351
+Publishing: Published
+Year: 2017
+Refereed: Yes
+Authors: Evans BJ , Tosi AJ , Zeng K , Dushoff J , Corvelo A , Melnick DJ
+
+Article: Estimating finite-population reproductive numbers in heterogeneous populations.
+Journal__2: Journal of theoretical biology
+Volume: 397
+Page: 1-12
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Keegan LT , Dushoff J
+
+Article: Reevaluating Cumulative HIV-1 Viral Load as a Prognostic Predictor: Predicting Opportunistic Infection Incidence and Mortality in a Ugandan Cohort.
+Journal__2: American journal of epidemiology
+Volume: 184
+Issue: 1
+Page: 67-77
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Sempa JB^ , Dushoff J , Daniels MJ , Castelnuovo B , Kiragga AN , Nieuwoudt M , Bellan SE^
+
+Article: The Hayflick Limit May Determine the Effective Clonal Diversity of Naive T Cells.
+Journal__2: Journal of immunology (Baltimore, Md. : 1950)
+Volume: 196
+Issue: 12
+Page: 4999-5004
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Ndifon W , Dushoff J
+
+Article: Epidemiological impact of a syphilis vaccine: a simulation study.
+Journal__2: Epidemiology and infection
+Volume: 144
+Issue: 15
+Page: 3244-3252
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Champredon D* , Cameron CE , Smieja M , Dushoff J
+
+Article: The risk of incomplete personal protection coverage in vector-borne disease.
+Journal__2: Journal of the Royal Society, Interface
+Volume: 13
+Issue: 115
+Page: 20150666
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Miller E , Dushoff J , Huppert A
+
+Article: Stochasticity and the limits to confidence when estimating R0 of Ebola and other emerging infectious diseases.
+Journal__2: Journal of theoretical biology
+Volume: 408
+Page: 145-54
+Publishing: Published
+Year: 2016
+Refereed: Yes
+Authors: Taylor BP , Dushoff J , Weitz JS
+
+Article: Modeling the effect of HIV coinfection on clearance and sustained virologic response during treatment for hepatitis C virus.
+Journal__2: Epidemics
+Volume: 12
+Page: 1:10
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Open: Yes
+Authors: Birger R, Kouyos R, Dushoff J, Grenfell B.
+
+Article: Modeling post-death transmission of Ebola: challenges for inference and opportunities for control.
+Journal__2: Scientific reports
+Volume: 5
+Page: 8751
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Weitz JS , Dushoff J
+
+Article: Estimating the global burden of endemic canine rabies.
+Journal__2: PLoS Neglected Tropical Diseases
+Volume: 9
+Issue: 4
+Page: e0003709
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Hampson K , Coudeville L , Lembo T , Sambo M , Kieffer A , Attlan M , Barrat J , Blanton JD , Briggs DJ , Cleaveland S , Costa P , Freuling CM , Hiby E , Knopf L , Leanes F , Meslin FX , Metlin A , Miranda ME , Müller T , Nel LH , Recuenco S , Rupprecht CE , Schumacher C , Taylor L , Vigilato MA , Zinsstag J , Dushoff J , Global Alliance for Rabies Control Partners for Rabies Prevention
+
+Article: The effect of sexually transmitted co-infections on HIV viral load amongst individuals on antiretroviral therapy: a systematic review and meta-analysis.
+Journal__2: BMC Infect Dis.
+Volume: 15
+Page: 249
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Open: Yes
+Authors: Champredon D*, Bellan SE^, Delva W^, Hunt S, Shi CF, Smieja M, Dushoff J.
+
+Article: Reassessment of HIV-1 acute phase infectivity: accounting for heterogeneity and study design with simulated cohorts.
+Journal__2: PLoS medicine
+Volume: 12
+Issue: 3
+Page: e1001801
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Bellan SE^ , Dushoff J , Galvani AP , Meyers LA
+
+Article: Statistical power and validity of Ebola vaccine trials in Sierra Leone: a simulation study of trial design and analysis.
+Journal__2: The Lancet. Infectious Diseases
+Volume: 15
+Issue: 6
+Page: 703-710
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Bellan SE^ , Pulliam JR , Pearson CA* , Champredon D* , Fox SJ , Skrip L , Galvani AP , Gambhir M , Lopman BA , Porco TC , Meyers LA , Dushoff J
+
+Article: Evaluating Ebola vaccine trials: insights from simulation.
+Journal__2: The Lancet. Infectious diseases
+Volume: 15
+Issue: 10
+Page: 1134
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Pulliam JR , Bellan SE^ , Gambhir M , Meyers LA , Dushoff J
+
+Article: Intrinsic and realized generation intervals in infectious-disease transmission.
+Journal__2: Proceedings. Biological sciences
+Volume: 282
+Issue: 1821
+Page: 20152026
+Publishing: Published
+Year: 2015
+Refereed: Yes
+Authors: Champredon D* , Dushoff J
+
+Article: Ebola control: effect of asymptomatic infection and acquired immunity.
+Journal__2: Lancet
+Volume: 384
+Issue: 9953
+Page: 1499-500
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Bellan SE^ , Pulliam JR , Dushoff J , Meyers LA
+
+Article: Modelling of OGTT curve identifies 1 h plasma glucose level as a strong predictor of incident type 2 diabetes: results from two prospective cohorts.
+Journal__2: Diabetologia
+Volume: 58
+Issue: 1
+Page: 87-97
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Alyass A* , Almgren P , Akerlund M , Dushoff J , Isomaa B , Nilsson P , Tuomi T , Lyssenko V , Groop L , Meyre D
+
+Article: Ebola virus vaccine trials: the ethical mandate for a therapeutic safety net.
+Journal__2: BMJ (Clinical research ed.)
+Volume: 349
+Page: g7518
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Bellan SE^ , Pulliam JR , Dushoff J , Meyers LA
+
+Article: Analytic calculation of finite-population reproductive numbers for direct- and vector-transmitted diseases with homogeneous mixing.
+Journal__2: Bull Math Biol.
+Volume: 76
+Issue: 5
+Page: 1143-54
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Keegan LT, Dushoff J.
+
+Article: Re: \"The 'case-chaos study' – adjunct or alternative to conventional case-control study methodology\".
+Journal__2: American Journal of Epidemiology
+Volume: 179
+Issue: 2
+Page: 261-2
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Pulliam JR , Dushoff J
+
+Article: Species abundance, not diet breadth, drives the persistence of the most linked pollinators as plant-pollinator networks disassemble.
+Journal__2: Am. Nat.
+Volume: 183
+Issue: 5
+Page: 600-11
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Winfree R, Williams NM, Dushoff J, Kremen C.
+
+Article: Estimating initial epidemic growth rates.
+Journal__2: Bulletin of mathematical biology
+Volume: 76
+Issue: 1
+Page: 245-60
+Publishing: Published
+Year: 2014
+Refereed: Yes
+Authors: Ma J , Dushoff J , Bolker BM , Earn DJ
+
+Article: Robust estimation of microbial diversity in theory and in practice.
+Journal__2: The ISME journal
+Volume: 7
+Issue: 6
+Page: 1092-101
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Haegeman B , Hamelin J , Moriarty J , Neal P , Dushoff J , Weitz JS
+
+Article: Exploring links between pH and bacterial community composition in soils from the Craibstone Experimental Farm.
+Journal__2: FEMS microbiology ecology
+Volume: 87
+Page: 403-15
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Bartram AK , Jiang X , Lynch MD , Masella AP , Nicol GW , Dushoff J , Neufeld JD
+
+Article: Designing programs for eliminating canine rabies from islands: Bali, Indonesia as a case study.
+Journal__2: PLoS neglected tropical diseases
+Volume: 7
+Issue: 8
+Page: e2372
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Townsend SE , Sumantra IP , Pudjiatmoko , Bagus GN , Brum E , Cleaveland S , Crafter S , Dewi AP , Dharma DM , Dushoff J , Girardi J , Gunata IK , Hiby EF , Kalalo C , Knobel DL , Mardiana IW , Putra AA , Schoonman L , Scott-Orr H , Shand M , Sukanadi IW , Suseno PP , Haydon DT , Hampson K
+
+Article: Inferring the causes of the three waves of the 1918 influenza pandemic in England and Wales.
+Journal__2: Proceedings. Biological sciences / The Royal Society
+Volume: 280
+Issue: 1766
+Page: 20131345
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: He D , Dushoff J , Day T , Ma J , Earn DJ
+
+Article: Population-level effects of clinical immunity to malaria.
+Journal__2: BMC infectious diseases
+Volume: 13
+Page: 428
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Keegan LT , Dushoff J
+
+Article: Genomic dynamics of transposable elements in the western clawed frog (Silurana tropicalis).
+Journal__2: Genome biology and evolution
+Volume: 5
+Issue: 5
+Page: 998-1009
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Shen JJ , Dushoff J , Bewick AJ , Chain FJ , Evans BJ
+
+Article: Intimate partner violence is associated with HIV infection in women in Kenya: A cross-sectional analysis.
+Journal__2: BMC public health
+Volume: 13
+Page: 512
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Shi CF , Kouyoumdjian FG , Dushoff J
+
+Article: Extra-couple HIV transmission in sub-Saharan Africa: a mathematical modelling study of survey data.
+Journal__2: Lancet
+Volume: 381
+Issue: 9877
+Page: 1561-9
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Bellan SE^ , Fiorella KJ , Melesse DY , Getz WM , Williams BG , Dushoff J
+
+Article: Effects of mixing in threshold models of social behavior.
+Journal__2: Physical review. E, Statistical, nonlinear, and soft matter physics
+Volume: 88
+Issue: 1
+Page: 012816
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: Akhmetzhanov AR* , Worden L , Dushoff J
+
+Article: Patterns of spread of influenza A in Canada.
+Journal__2: Proceedings. Biological sciences / The Royal Society
+Volume: 280
+Issue: 1770
+Page: 20131174
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Authors: He D , Dushoff J , Eftimie R , Earn DJ
+
+Article: HIV sexual transmission is predominantly driven by single individuals rather than discordant couples: a model-based approach.
+Journal__2: PLoS One
+Volume: 8
+Issue: 12
+Page: e82906
+Publishing: Published
+Year: 2013
+Refereed: Yes
+Open: Yes
+Authors: Champredon D*, Bellan SE^, Dushoff J.
+
+Article: Effects of school closure on incidence of pandemic influenza in Alberta, Canada.
+Journal__2: Annals of internal medicine
+Volume: 156
+Issue: 3
+Page: 173-81
+Publishing: Published
+Year: 2012
+Refereed: Yes
+Authors: Earn DJ , He D , Loeb MB , Fonseca K , Lee BE , Dushoff J
+
+Article: Agricultural intensification, priming for persistence and the emergence of Nipah virus: a lethal bat-borne zoonosis.
+Journal__2: HJournal of the Royal Society, Interface / the Royal Society
+Volume: 9
+Issue: 66
+Page: 89-101
+Publishing: Published
+Year: 2012
+Refereed: Yes
+Authors: Pulliam JR , Epstein JH , Dushoff J , Rahman SA , Bunning M , Jamaluddin AA , Hyatt AD , Field HE , Dobson AP , Daszak P ,
+
+Article: How to make epidemiological training infectious.
+Journal__2: PLoS biology
+Volume: 10
+Issue: 4
+Page: e1001295
+Publishing: Published
+Year: 2012
+Refereed: Yes
+Authors: Bellan SE^ , Pulliam JR , Scott JC , Dushoff J ,
+
+Article: Functional biogeography of ocean microbes revealed through non-negative matrix factorization.
+Journal__2: PLoS ONE
+Volume: 7
+Issue: 9
+Page: e43866
+Publishing: Published
+Year: 2012
+Refereed: Yes
+Authors: Jiang X , Langille MG , Neches RY , Elliot M , Levin SA , Eisen JA , Weitz JS , Dushoff J
+
+Article: A non-negative matrix factorization framework for identifying modular patterns in metagenomic profile data.
+Journal__2: Journal of mathematical biology
+Volume: 64
+Issue: 4
+Page: 697-711
+Publishing: Published
+Year: 2012
+Refereed: Yes
+Authors: Jiang X , Weitz JS , Dushoff J
+
+Article: Mechanistic modelling of the three waves of the 1918 influenza pandemic
+Journal__2: Theor. Ecol
+Volume: 4
+Page: 283-288
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Contribution: Co-Author
+Authors: He D; Dushoff J; Day T; Ma J; Earn DJD
+
+Article: Multi-stability and multi-instability phenomena in a mathematical model of tumor-immune-virus interactions.
+Journal__2: Bulletin of mathematical biology
+Volume: 73
+Issue: 12
+Page: 2932-61
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Authors: Eftimie R , Dushoff J , Bridle BW , Bramson JL , Earn DJ
+
+Article: Prevalence of epistasis in the evolution of influenza A surface proteins.
+Journal__2: PLoS genetics
+Volume: 7
+Issue: 2
+Page: e1001301
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Authors: Kryazhimskiy S , Dushoff J , Bazykin GA , Plotkin JB
+
+Article: Age-specific mortality risk from pandemic influenza.
+Journal__2: Journal of theoretical biology
+Volume: 288
+Page: 29-34
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Authors: Ma J , Dushoff J , Earn DJ
+
+Article: Modeling the population-level effects of male circumcision as an HIV-preventive measure: a gendered perspective.
+Journal__2: PloS one
+Volume: 6
+Issue: 12
+Page: e28608
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Authors: Dushoff J , Patocs A* , Shi CF
+
+Article: The odds of duplicate gene persistence after polyploidization.
+Journal__2: BMC genomics
+Volume: 12
+Page: 599
+Publishing: Published
+Year: 2011
+Refereed: Yes
+Authors: Chain FJ , Dushoff J , Evans BJ
+
+Article: Fluctuation domains in adaptive evolution.
+Journal__2: Theoretical population biology
+Volume: 77
+Issue: 1
+Page: 6-13
+Publishing: Published
+Year: 2010
+Refereed: Yes
+Authors: Boettiger C , Dushoff J , Weitz JS
+
+Article: Unlocking the forest inventory data: relating individual tree performance to unmeasured environmental factors.
+Journal__2: Ecological applications : a publication of the Ecological Society of America
+Volume: 20
+Issue: 3
+Page: 684-99
+Publishing: Published
+Year: 2010
+Refereed: Yes
+Authors: Lichstein JW , Dushoff J , Ogle K , Chen A , Purves DW , Caspersen JP , Pacala SW
+
+Article: Transmission dynamics and prospects for the elimination of canine rabies.
+Journal__2: PLoS biology
+Volume: 7
+Issue: 3
+Page: e53
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Hampson K , Dushoff J , Cleaveland S , Haydon DT , Kaare M , Packer C , Dobson A
+
+Article: Reconstructing influenza incidence by deconvolution of daily mortality time series.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 106
+Issue: 51
+Page: 21825-9
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Goldstein E , Dushoff J , Ma J , Plotkin JB , Earn DJ , Lipsitch M
+
+Article: Ability to replicate in the cytoplasm predicts zoonotic transmission of livestock viruses.
+Journal__2: The Journal of infectious diseases
+Volume: 199
+Issue: 4
+Page: 565-8
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Pulliam JR , Dushoff J
+
+Article: Initial human transmission dynamics of the pandemic (H1N1) 2009 virus in North America.
+Journal__2: Influenza and other respiratory viruses
+Volume: 3
+Issue: 5
+Page: 215-22
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Pourbohloul B , Ahued A , Davoudi B , Meza R , Meyers LA , Skowronski DM , Villaseñor I , Galván F , Cravioto P , Earn DJ , Dushoff J , Fisman D , Edmunds WJ , Hupert N , Scarpino SV , Trujillo J , Lutzow M , Morales J , Contreras A , Chávez C , Patrick DM , Brunham RC
+
+Article: Avoiding spurious findings of nonrandom social structure in association data
+Journal__2: Anim. Behav.
+Volume: 77
+Page: 1381-1385
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Contribution: Last Author
+Authors: Sundaresan SR ; Fischhoff IR*; Dushoff, Jonathan
+
+Article: On the use of hemagglutination-inhibition for influenza surveillance: surveillance data are predictive of influenza vaccine effectiveness.
+Journal__2: Vaccine
+Volume: 27
+Issue: 18
+Page: 2447-52
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Ndifon W , Dushoff J , Levin SA
+
+Article: Unsupervised statistical clustering of environmental shotgun sequences.
+Journal__2: BMC bioinformatics
+Volume: 10
+Page: 316
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Kislyuk A , Bhatnagar S , Dushoff J , Weitz JS
+
+Article: Reproductive status influences group size and persistence of bonds in male plains zebra (Equus burchelli)
+Journal__2: Behav. Ecol. Sociobiol.
+Volume: 63
+Page: 1035-1043
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Contribution: Co-Author
+Authors: Fischhoff IR*; Dushoff, Jonathan; Sundaresan SR; Cordingley, Justine E.; Rubenstein, Daniel I.
+
+Article: On the accessibility of adaptive phenotypes of a bacterial metabolic network.
+Journal__2: PLoS computational biology
+Volume: 5
+Issue: 8
+Page: e1000472
+Publishing: Published
+Year: 2009
+Refereed: Yes
+Authors: Ndifon W , Plotkin JB , Dushoff J
+
+Article: Host-pathogen interactions, insect outbreaks, and natural selection for disease resistance.
+Journal__2: The American naturalist
+Volume: 172
+Issue: 6
+Page: 829-42
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Elderd BD , Dushoff J , Dwyer G
+
+Article: Rabies exposures, post-exposure prophylaxis and deaths in a region of endemic canine rabies.
+Journal__2: PLoS neglected tropical diseases
+Volume: 2
+Issue: 11
+Page: e339
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Hampson K , Dobson A , Kaare M , Dushoff J , Magoto M , Sindoya E , Cleaveland S
+
+Article: Alternative stable states in host-phage dynamics
+Journal__2: Theor. Ecol.
+Volume: 1
+Page: 13:19
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: J. S. Weitz and J. Dushoff
+
+Article: Scaling from trees to forests: Tractable macroscopic equations for forest dynamics
+Journal__2: Ecol. Monogr.
+Volume: 78
+Page: 523-545
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Contribution: Co-Author
+Authors: N. Strigul, D. Pristinski, D. Purves, J. Dushoff, S. Pacala
+
+Article: White spruce meets black spruce: Dispersal, postfire establishment, and growth in a warming climate.
+Journal__2: Ecol. Monogr.
+Volume: 78
+Page: 489-505
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: C. Wirth, J. W. Lichstein, J. Dushoff, A. Chen, F. S. Chapin.
+
+Article: Exploring reservoir dynamics: a case study of rabies in the Serengeti ecosystem.
+Journal__2: The Journal of applied ecology
+Volume: 45
+Issue: 4
+Page: 1246-1257
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Lembo T , Hampson K , Haydon DT , Craft M , Dobson A , Dushoff J , Ernest E , Hoare R , Kaare M , Mlengeya T , Mentzel C , Cleaveland S
+
+Article: Antibiotic overuse: the influence of social norms.
+Journal__2: Journal of the American College of Surgeons
+Volume: 207
+Issue: 2
+Page: 265-75
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: McDonnell Norms Group
+
+Article: Natural selection for nucleotide usage at synonymous and nonsynonymous sites in influenza A virus genes.
+Journal__2: Journal of virology
+Volume: 82
+Issue: 10
+Page: 4938-45
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Kryazhimskiy S , Bazykin GA , Dushoff J
+
+Article: A mixability theory for the role of sex in evolution.
+Journal__2: Proceedings of the National Academy of Sciences of the United States of America
+Volume: 105
+Issue: 50
+Page: 19803-8
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Livnat A , Papadimitriou C , Dushoff J , Feldman MW
+
+Article: Directionality in the evolution of influenza A haemagglutinin.
+Journal__2: Proceedings. Biological sciences / The Royal Society
+Volume: 275
+Issue: 1650
+Page: 2455-64
+Publishing: Published
+Year: 2008
+Refereed: Yes
+Authors: Kryazhimskiy S , Bazykin GA , Plotkin JB , Plotkin J , Dushoff J
+
+Article: Intraspecific variation and species coexistence.
+Journal__2: The American naturalist
+Volume: 170
+Issue: 6
+Page: 807-18
+Publishing: Published
+Year: 2007
+Refereed: Yes
+Authors: Lichstein JW , Dushoff J , Levin SA , Pacala SW
+
+Article: Native bees provide insurance against ongoing honey bee losses.
+Journal__2: Ecology letters
+Volume: 10
+Issue: 11
+Page: 1105-13
+Publishing: Published
+Year: 2007
+Refereed: Yes
+Authors: Winfree R , Williams NM , Dushoff J , Kremen C
