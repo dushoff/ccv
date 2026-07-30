@@ -25,7 +25,7 @@ Ignore += *.xmldiff *.diff
 
 ######################################################################
 
-## python package
+## python package; now installed locally as a fork!
 
 generator = pyvenv/bin/ccv_generator
 
@@ -37,7 +37,7 @@ ccv_generator.lpip: | ruamel.yaml.pip ccv_generator
 ccv_generator: | ../ccv_generator
 	ln -fs ../$@/ .
 
-../ccv_generator:
+../ccv_generator: ../%:
 	cd .. && $(MAKE) $*
 
 Ignore += $(alldirs)
@@ -264,7 +264,7 @@ Ignore += makestuff
 msrepo = https://github.com/dushoff
 
 ## ln -s ../makestuff . ## Do this first if you want a linked makestuff
-Makefile: makestuff/01.stamp
+Makefile: makestuff/02.stamp
 makestuff/%.stamp: | makestuff
 	- $(RM) makestuff/*.stamp
 	cd makestuff && $(MAKE) pull
