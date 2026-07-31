@@ -6,6 +6,8 @@ Ignore = target.mk
 vim_session:
 	bash -ic "vmt README.md notes.md"
 
+Sources += $(wildcard *.md)
+
 ## -include makestuff/perl.def
 pyvenv: ; $(cleanpyvenv)
 -include makestuff/pyvenv.mk
@@ -157,29 +159,6 @@ current.present.old.up.xml: current.present.old.yaml
 ## For now, just save different .pgrs!
 
 ######################################################################
-
-## pypath = pyvenv
-
-Ignore += *.yaml
-## start.yaml: start.XML
-%.yaml: tmp.xml | ccv_generator.lpip
-	$(ccvTrans)
-
-ccvTrans = $(generator) -i $< $@
-
-######################################################################
-
-## Move this stuff to new package
-
-## Bizarre auth fix from Claude 2026 Jul 26 (Sun)
-## Maybe go back and cache whatever it's always getting from internet
-
-## patching the package was not my first choice, but …
-Sources += $(wildcard *.patch)
-Ignore += *.patch
-.PRECIOUS: %.patch
-%.patch: %.py
-	- diff -u $(generator)/$< $< > $@
 
 ### Makestuff
 

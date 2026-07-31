@@ -1,5 +1,4 @@
-I have a single download file from Nov 2025 that probably has everything that was there at the time.
 
-I have probably uploaded some edited sections since then, so downloading could result in lost information in the download xml (but that information should be tracked on this repo).
+This is a repo focused on going from ccv-style stuff to user-friendly stuff (less important, should mostly be done once)… and then going _back_.
 
-2026 Jul 29 (Wed) Rebuilding now from pubs; try to make a clean logic and copy it down.
+It is sensitive to .tmp files, which I make somehow but don't understand perfectly. The .tmp files need to have '' after colon-delimit field names for fields that could have further colons in them.
