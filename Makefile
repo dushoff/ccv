@@ -76,7 +76,7 @@ dataset-cv.xml:
 
 ## This was used to pull and set up template
 ## collab = "Activities/International Collaboration Activities"
-## Ignore += earn ## used to be a mirror
+Ignore += earn ## used to be a mirror
 
 ######################################################################
 
