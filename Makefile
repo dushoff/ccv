@@ -68,7 +68,7 @@ dataset-cv.xml:
 
 ######################################################################
 
-## collab pipeline
+## Collaborations
 ## Could be moved to biography/ but also seems kind of fine.
 
 ## collab.up.yaml: collab.pgr collab.tmp pgry.py
@@ -76,14 +76,16 @@ dataset-cv.xml:
 
 ## This was used to pull and set up template
 ## collab = "Activities/International Collaboration Activities"
-## mirrors += earn
+## Ignore += earn ## used to be a mirror
+
+######################################################################
+
+## Presentations
 
 ## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.lpip
 	$(generator) -i $< -f "Contributions/Presentations" $@
-
-%.all.yaml: %.xml
 
 ######################################################################
 
