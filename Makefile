@@ -13,18 +13,6 @@ pyvenv: ; $(cleanpyvenv)
 
 ######################################################################
 
-Sources += $(wildcard *.md)
-
-## Comparisons for reverse engineering
-## see notes.md
-
-Ignore += *.xmldiff *.diff
-## pubchange.xmldiff: start.XML pubchange.XML 
-%.xmldiff: start.XML %.XML 
-	xmldiff $^ > $@
-
-######################################################################
-
 ## python package; now installed locally as a fork!
 
 generator = pyvenv/bin/ccv_generator
@@ -47,8 +35,6 @@ Ignore += $(alldirs)
 
 ######################################################################
 
-## Generic rules
-
 Sources += download.xml
 Ignore += $(wildcard *.XML)
 
@@ -56,55 +42,10 @@ Ignore += $(wildcard *.XML)
 %.up.yaml: %.pgr %.tmp pgry.py
 	$(PITH)
 
-%.XML: %.up.yaml | downloader.ccvpatch
+%.XML: %.up.yaml | ccv_generator.lpip
 	$(generator) -i $< tmp.xml && $(MV) tmp.xml $@
 
-## downloader.ccvpatch: ccv_generator.lpip
-
 ######################################################################
-
-## Experimenting 2026 Jul 29 (Wed)
-
-## recipe line why needed??
-download.all.yaml: download.xml
-	$(generator) -i $< $@
-
-%.all.yaml: %.xml
-	$(generator) -i $< $@
-
-######################################################################
-
-## Build a pubs thing (with pre-processing)
-## Sticking with the one-download idea right now 2026 Jul 29 (Wed)
-
-journal.yaml: download.xml
-	$(generator) -i $< -f "Contributions/Publications/Journal Articles" $@
-
-## Making .tmp by editing yaml
-Ignore += journal.PGR
-journal.PGR: journal.yaml journal.tmp ypgr.py
-	$(PITH)
-
-jtest: journal.PGR
-	$(CP) $< test.journal.pgr
-
-## test.journal.up.yaml: test.journal.pgr journal.tmp
-test.journal.up.yaml: test.journal.pgr journal.tmp pgry.py
-%.journal.up.yaml: %.journal.pgr journal.tmp pgry.py
-	$(PITH)
-
-## test.journal.XML: test.journal.pgr journal.tmp
-## test.journal.XML: test.journal.pgr test.journal.up.yaml
-
-## First seriously curated journal.pgr
-## Downloaded from CCV with collaborator symbols
-## Eventually merge with all the Taiwan historical work?
-## Code for adding is still in cron but should be easy to move if this directory weren't such a mess
-## Added some symbols manually; need to upload to CCV
-## first.journal.XML: first.journal.pgr
-
-######################################################################
-
 ## Using biography directory
 
 pardirs += biography
@@ -236,28 +177,6 @@ Ignore += *.patch
 .PRECIOUS: %.patch
 %.patch: %.py
 	- diff -u $(generator)/$< $< > $@
-
-## /home/dushoff/terminal/dirs/ccv/pyvenv/bin/pip show -f ccv-generator
-## downloader.ccvpatch: downloader.patch
-## downloader.ccvpatch: downloader.patch
-%.ccvpatch: %.patch | ccv_generator.lpip
-	patch $(generator)/$*.py < $<
-	$(touch)
-
-#### NOT USED
-## This suppressed the wrong stuff, apparently
-## sitecustomize.pypackage: sitecustomize.py
-Ignore += *.pypackage
-%.pypackage: %.py
-	$(CP) $< pyvenv/lib/python3*/site-packages/
-	$(touch)
-
-## Confusing debug from Claude. -p reveals the make DB!
-## make -p 2>/dev/null | grep -B2 -A6 '^earn\.collab\.pgr *:'
-## make -r earn.collab.pgr
-## make -rd earn.collab.pgr > make.log
-
-######################################################################
 
 ### Makestuff
 
