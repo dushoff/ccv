@@ -174,7 +174,9 @@ for rec in records:
             if single_quote_field.get(key, False):
                 # Add single quotes if not already enclosed in single quotes
                 if not re.fullmatch(r"\s*'.*'\s*", val_out):
-                    val_out = f"'{val_out}'"
+                    # YAML single-quoted strings escape an embedded ' by doubling it
+                    escaped = val_out.replace("'", "''")
+                    val_out = f"'{escaped}'"
         else:
             # Missing in record: use template literal default exactly as written
             val_out = tmpl_default_literal[key]

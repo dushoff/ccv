@@ -1,7 +1,7 @@
 Contributions:
   Presentations:
-  - Presentation Title: 'Title'  #  (Name of the presentation)
-    Conference / Event Name: #  (The name of the event in which the person gave the presentation)
+  - Presentation Title: ''  #  (Name of the presentation)
+    Conference / '' #  (The name of the event in which the person gave the presentation)
     Location: # e.g., Afghanistan, Albania, Antarctica... Full list: https://ccv-cvc.ca/schema/dataset-cv-lov.xml (The country where the conference took place)
     City: null#  (The city where the conference/event took place)
     Main Audience: Researcher # One of: Researcher, Knowledge User, Decision Maker, General Public (The nature of the audience)

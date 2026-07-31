@@ -55,6 +55,12 @@ hotdirs += biography
 ## Do need to Ignore, though
 alldirs += $(pardirs)
 
+######################################################################
+
+## Pubs (journal articles) now curated in biography
+## Maybe make the local into journal.PGR and have it follow a generic rule
+## using PGR for made dependencies and pgr for legacy
+
 ccv.journal.up.yaml: biography/ccvpubs.2020.newyear.pgr journal.tmp pgry.py
 	$(PITH)
 ## ccv.journal.XML: 
@@ -70,6 +76,7 @@ dataset-cv.xml:
 
 ## Collaborations
 ## Could be moved to biography/ but also seems kind of fine.
+## time truncation is a reason to move it
 
 ## collab.up.yaml: collab.pgr collab.tmp pgry.py
 ## collab.XML: collab.pgr
@@ -86,6 +93,14 @@ Ignore += earn ## used to be a mirror
 ## current.present.yaml: current.xml
 %.present.yaml: %.xml | ccv_generator.lpip
 	$(generator) -i $< -f "Contributions/Presentations" $@
+
+## current.present.pgr jd.present.pgr new.present.pgr all seem old
+## Using present.pgr
+## Need to ship out so we can do time truncation.
+
+## git mv jd.present.pgr present.pgr ## for testing
+
+## present.XML: present.up.yaml present.tmp
 
 ######################################################################
 
