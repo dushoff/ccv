@@ -40,6 +40,7 @@ Ignore += $(alldirs)
 Sources += download.xml
 Ignore += $(wildcard *.XML)
 
+Ignore += *.yaml
 .PRECIOUS: %.up.yaml
 %.up.yaml: %.pgr %.tmp pgry.py
 	$(PITH)
