@@ -57,40 +57,26 @@ alldirs += $(pardirs)
 
 ccv.journal.up.yaml: biography/ccvpubs.2020.newyear.pgr journal.tmp pgry.py
 	$(PITH)
-
 ## ccv.journal.XML: 
 
 ######################################################################
 
 ## Not implemented, but implement if you have auth or connection problems
-
 Sources += dataset-cv.xml
 dataset-cv.xml:
 	curl -Lko $@ https://ccv-cvc.ca/schema/$@
 
 ######################################################################
 
-## collab pipeline starts here (made it from David's stuff!)
+## collab pipeline
+## Could be moved to biography/ but also seems kind of fine.
 
 ## collab.up.yaml: collab.pgr collab.tmp pgry.py
 ## collab.XML: collab.pgr
 
-######################################################################
-
-## Stuff below here is hasty NSERC stuff
-
-mirrors += earn
-
-## Do we even need a collab variable now that we have collab.tmp?
-collab = "Activities/International Collaboration Activities"
-
-## Something broken here 2026 Jul 26 (Sun)
-earn.collab.yaml: earn/ccv.xml | ccv_generator.lpip
-	$(generator) -i $< -f $(collab) $@
-
-## earn.collab.pgr: earn.collab.yaml collab.tmp ypgr.py
-%.collab.pgr: %.collab.yaml collab.tmp ypgr.py
-	$(PITH)
+## This was used to pull and set up template
+## collab = "Activities/International Collaboration Activities"
+## mirrors += earn
 
 ## download.present.yaml: download.xml
 ## current.present.yaml: current.xml
