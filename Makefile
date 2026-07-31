@@ -77,6 +77,10 @@ dataset-cv.xml:
 
 ######################################################################
 
+## Both the sections below were hand built. It would be fun to move them to biography and let them be cooler. But it also seems plausible to hand-truncate them for expiry date and just stay here.
+
+######################################################################
+
 ## Collaborations
 ## Could be moved to biography/ but also seems kind of fine.
 ## time truncation is a reason to move it
