@@ -1,0 +1,10 @@
+# Filter for nserc.journal.PGR (made from publications.pgr by pgrfilter.py)
+#
+# drop <Field> <test>   remove records that pass the test
+# keep <Field> <test>   remove records that fail the test
+# Tests: is X | is not X | has X | matches REGEX | missing | present
+#        before N | from N   (numeric, e.g. years)
+# Field names are as written in publications.pgr (e.g. Year)
+
+# Time window
+keep Year from 2020

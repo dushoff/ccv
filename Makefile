@@ -94,20 +94,56 @@ Ignore += earn ## used to be a mirror
 
 ######################################################################
 
+## Importing sections from a CCV download (should be rare)
+## <download>.<sec>.down.PGR uses <download>.xml, <sec>.tmp and ccvsec.<sec>
+## Made .PGRs are for comparing and harvesting into the hand-edited .pgrs
+
+## download.journal.down.PGR: download.xml journal.tmp
+## download.present.down.PGR: download.xml present.tmp
+## download.collab.down.PGR: download.xml collab.tmp
+ccvsec.present = Contributions/Presentations
+ccvsec.journal = Contributions/Publications/Journal Articles
+ccvsec.collab = Activities/International Collaboration Activities
+
+.SECONDEXPANSION:
+Ignore += *.down.yaml
+%.down.yaml: $$(basename $$*).xml | ccv_generator.lpip
+	$(generator) -i $< -f "$(ccvsec$(suffix $*))" $@
+
+%.down.PGR: %.down.yaml $$(subst .,,$$(suffix $$*)).tmp ypgr.py
+	$(PITH)
+
+######################################################################
+
 ## Presentations
 
-## download.present.yaml: download.xml
-## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.lpip
-	$(generator) -i $< -f "Contributions/Presentations" $@
+## present.pgr is the ONLY presentations pgr (edit by hand)
+## (current, jd and new .present.pgr were merged into it and removed)
 
-## current.present.pgr jd.present.pgr new.present.pgr all seem old
-## Using present.pgr
-## Need to ship out so we can do time truncation.
+## Uploadable products are filtered from it via %.present.filter.txt
+## nserc.present.XML: nserc.present.filter.txt present.pgr
+Sources += $(wildcard *.filter.txt)
+Ignore += *.PGR
+.PRECIOUS: %.present.PGR %.present.up.yaml
+%.present.PGR: present.pgr %.present.filter.txt pgrfilter.py
+	$(PITH)
 
-## git mv jd.present.pgr present.pgr ## for testing
+%.present.up.yaml: %.present.PGR present.tmp pgry.py
+	$(PITH)
 
-## present.XML: present.up.yaml present.tmp
+######################################################################
+
+## Publications (journal articles)
+
+## publications.pgr is the hand-edited source (was first.journal.pgr)
+## It was made from biography/ (see Pubs, above); curate here from now on
+## nserc.journal.XML: nserc.journal.filter.txt publications.pgr
+.PRECIOUS: %.journal.PGR %.journal.up.yaml
+%.journal.PGR: publications.pgr %.journal.filter.txt pgrfilter.py
+	$(PITH)
+
+%.journal.up.yaml: %.journal.PGR journal.tmp pgry.py
+	$(PITH)
 
 ######################################################################
 
@@ -130,10 +166,6 @@ Sources += present.md
 ## Probably want to archive using tsv soon (see cron)
 Sources += present.pgr
 
-## current.present.yaml: current.xml
-%.present.yaml: %.xml | ccv_generator.lpip
-	$(generator) -i $< -f "Contributions/Presentations" $@
-
 ## jd.present.new.up.xml: jd.present.pgr
 Ignore += *.up.xml
 %.up.xml: %.yaml | ccv_generator.lpip
@@ -142,9 +174,11 @@ Ignore += *.up.xml
 Sources += $(wildcard *.tmp)
 Sources += $(wildcard *.pgr)
 ## Ignore += *.pgr
+## Made new .present.pgr files from downloads; we now keep only present.pgr
+## Imports are now %.down.PGR (see Importing, above)
 ## current.present.pgr: current.present.yaml present.tmp ypgr.py
-%.present.pgr: %.present.yaml present.tmp ypgr.py
-	$(PITH)
+## %.present.pgr: %.present.yaml present.tmp ypgr.py
+## 	$(PITH)
 
 ## current.present.new.yaml: current.present.pgr present.tmp pgry.py
 ## new.present.new.yaml: new.present.pgr present.tmp pgry.py
