@@ -33,6 +33,14 @@ ccv_generator: | ../ccv_generator
 ccv_generator/Makefile: | ccv_generator
 	cd ccv_generator && $(LNF) jd.mk Makefile
 
+## Bump the number to force a pull of ccv_generator in other copies
+Ignore += *.stamp
+Makefile: ccv_generator01.stamp
+ccv_generator%.stamp: | ccv_generator/Makefile
+	- $(RM) ccv_generator*.stamp
+	cd ccv_generator && $(MAKE) pull
+	touch $@
+
 Ignore += $(alldirs)
 
 ######################################################################
@@ -207,8 +215,8 @@ Ignore += makestuff
 msrepo = https://github.com/dushoff
 
 ## ln -s ../makestuff . ## Do this first if you want a linked makestuff
-Makefile: makestuff/02.stamp
-makestuff/%.stamp: | makestuff
+Makefile: makestuff02.stamp
+makestuff%.stamp: | makestuff
 	- $(RM) makestuff/*.stamp
 	cd makestuff && $(MAKE) pull
 	touch $@
