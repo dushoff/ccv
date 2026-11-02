@@ -35,3 +35,14 @@ Patched a bunch of ccvpatch logic, seems to kind of work now, try on siX
 ##### 2026 Jul 30 (Thu)
 
 Making up.yaml now. What is actually in CCV? How do I curate and add things going forward?
+
+##### Older notes (from present.md, merged 2026 Nov 01)
+
+present.pgr was originally grabbed from cron and then modified to make the NSERC CCV. It is now the main presentations pgr (info from CCV, cron and elsewhere, not really cleaned). It has months, and maybe other info, lost in the nserc version. Could use logic like country dictionaries so things look more normal.
+
+Wanted: tools for manipulating and filtering .pgr — either assisted python scripts here, or converting to/from tsv and using dplyr.
+
+Collaborations and presentations were hand-built; could move to biography/, or just hand-truncate for expiry and stay here.
+
+Certificate debugging:
+openssl s_client -connect ccv-cvc.ca:443 -servername ccv-cvc.ca -showcerts </dev/null 2>/dev/null | grep -E "^(subject|issuer)="
